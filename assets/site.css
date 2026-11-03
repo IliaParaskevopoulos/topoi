@@ -278,3 +278,8 @@ h3 { font-size: 20px; font-weight: 700; margin: 0 0 8px; }
 .controls button[data-act=play]:hover, .template button:hover { background: var(--pen-deep); }
 .brand-greek { color: #8E5A86; }
 ::selection { background: var(--hl); color: var(--ink); }
+
+/* Logo: Seal. A Byzantine purple disc with a gold tau, first letter of τόποι. */
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand-mark { width: 30px; height: 30px; }
+.brand .wm { color: var(--ink); font-size: 21px; letter-spacing: -0.02em; }

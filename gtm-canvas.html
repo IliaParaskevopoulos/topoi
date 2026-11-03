@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Go-to-Market Canvas — Topoi</title>
+<meta name="description" content="One page that answers the core go-to-market questions: who, what problem, what value, what price, which channels, how you will measure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-go-to-market-and-launch"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V3.5"/><path d="M5 4h13l-2.5 4.5L18 13H5"/></svg>Go-to-market and launch</a></p>
+    <h1>Go-to-Market Canvas</h1>
+    <p class="lede">One page that answers the core go-to-market questions: who, what problem, what value, what price, which channels, how you will measure.</p>
+    <p class="origin">Common go-to-market planning practice; no single author</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Go-to-Market Canvas">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Lumora Diagnostics</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Target segment</span></button>
+        <p class="gen">Who you will sell to first, specific enough to build a list.</p><p class="ex">Paediatric practices in German-speaking Switzerland.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Problem</span></button>
+        <p class="gen">The problem they feel most, in their words.</p><p class="ex">Parents push for antibiotics before results are back.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Value proposition</span></button>
+        <p class="gen">Why your product is the best answer for this segment.</p><p class="ex">A result in ten minutes, during the consultation.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Pricing</span></button>
+        <p class="gen">The model and level, and how it compares with alternatives.</p><p class="ex">Device rental plus CHF 12 per test.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Channels</span></button>
+        <p class="gen">How buyers will hear about you and buy.</p><p class="ex">Field sales, the paediatric association congress, and two distributors.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Success metrics</span></button>
+        <p class="gen">The few numbers that show it is working.</p><p class="ex">60 practices in 12 months; 300 tests per practice per year.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Do we have a complete, consistent plan for taking this product to market?</p></section>
+      <section><h2>When to use it</h2><ul><li>Before a launch or a new market entry.</li><li>Aligning product, marketing and sales on one plan.</li><li>Reviewing why a launch is underperforming.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>As a substitute for the detailed launch plan. It is the summary on top.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Fill each box in one or two sentences.</li><li>Check the boxes agree with each other.</li><li>Review it with sales and product leadership.</li><li>Revisit it after the first 90 days in market.</li></ol></section>
+      <section><h2>Worked example: Lumora Diagnostics</h2>
+        <p>Lumora Diagnostics is a fictional company that makes a rapid blood-test reader for GP clinics.</p>
+        <dl class="example-list"><dt>Target segment</dt><dd>Paediatric practices in German-speaking Switzerland.</dd><dt>Problem</dt><dd>Parents push for antibiotics before results are back.</dd><dt>Value proposition</dt><dd>A result in ten minutes, during the consultation.</dd><dt>Pricing</dt><dd>Device rental plus CHF 12 per test.</dd><dt>Channels</dt><dd>Field sales, the paediatric association congress, and two distributors.</dd><dt>Success metrics</dt><dd>60 practices in 12 months; 300 tests per practice per year.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>A target segment too broad to act on.</li><li>Channels the target buyers do not use.</li><li>Metrics that measure activity, not results.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>GO-TO-MARKET CANVAS — [Product], [market]
+
+Target segment:
+Problem:
+Value proposition:
+Pricing:
+Channels:
+Success metrics:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A common go-to-market planning practice; there is no single original source.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="launch-tiers.html">Launch Tiers</a></li><li><a href="t-minus-launch-plan.html">T-minus Launch Plan</a></li><li><a href="beachhead-market.html">Beachhead Market</a></li><li><a href="gtm-motions.html">Go-to-Market Motions</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Planning a launch or a new market entry</dd><dt>You need</dt><dd>Positioning, pricing and channel options</dd><dt>You get</dt><dd>A one-page plan everyone can check against</dd><dt>Time</dt><dd>One or two workshops</dd><dt>Example company</dt><dd>Lumora Diagnostics, diagnostics</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":6,"diagram":{"type":"chain","viewBox":"0 0 800 490","alt":"Go-to-market canvas: target segment, problem, value proposition, pricing, channels and success metrics.","nodes":[{"step":1,"title":"Target segment","text":"Who first.","ex":"Paediatric practices."},{"step":2,"title":"Problem","text":"What they feel most.","ex":"Pressure for antibiotics."},{"step":3,"title":"Value proposition","text":"Why you are best for them.","ex":"Result in ten minutes."},{"step":4,"title":"Pricing","text":"Model and level.","ex":"Rental + CHF 12 per test."},{"step":5,"title":"Channels","text":"How they hear and buy.","ex":"Field sales, congress, distributors."},{"step":6,"title":"Success metrics","text":"Numbers that show it works.","ex":"60 practices in 12 months."}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

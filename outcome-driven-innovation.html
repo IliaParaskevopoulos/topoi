@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outcome-Driven Innovation — Topoi</title>
+<meta name="description" content="Break a customer’s job into measurable outcomes, then find the ones that matter most and are served worst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-customer-understanding"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Customer understanding</a></p>
+    <h1>Outcome-Driven Innovation</h1>
+    <p class="lede">Break a customer’s job into measurable outcomes, then find the ones that matter most and are served worst.</p>
+    <p class="origin">Tony Ulwick, Strategyn, 1990s</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Outcome-Driven Innovation">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Map the job</span></button>
+        <p class="gen">Pick one job the customer is trying to get done and set up a grid: satisfaction left to right, importance bottom to top.</p><p class="ex">The job: keep production equipment running.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Rate outcome statements</span></button>
+        <p class="gen">Write outcome statements in a fixed form (“minimise the time it takes to…”) and have customers rate each for importance and satisfaction. The line marks where the two are equal.</p><p class="ex">Tessera writes 60 outcome statements and surveys 180 maintenance managers.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Underserved outcomes</span></button>
+        <p class="gen">High importance, low satisfaction. These are the best opportunities to lead with.</p><p class="ex">“Minimise the time to learn a machine is about to fail”: importance 9.1, satisfaction 3.2.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Overserved outcomes</span></button>
+        <p class="gen">Satisfaction is higher than importance. Competing here wastes effort; it can even be simplified.</p><p class="ex">“Minimise the effort to schedule routine checks”: importance 6.0, satisfaction 8.5.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Score and choose</span></button>
+        <p class="gen">Opportunity score = importance + the gap between importance and satisfaction (if positive). Scores above 10 are strong opportunities.</p><p class="ex">Early failure warning scores 15.0, so it leads Tessera’s roadmap and messaging.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which customer outcomes are important but poorly served today, so we can lead with them?</p></section>
+      <section><h2>When to use it</h2><ul><li>Deciding which needs to build and position around.</li><li>Finding segments with different unmet needs.</li><li>Backing messaging choices with numbers, not opinion.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Very early markets where customers cannot yet describe the job.</li><li>When you cannot survey enough customers for reliable ratings.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Define the job in the customer’s words, without your product in it.</li><li>Interview customers to map the job steps and collect outcome statements.</li><li>Survey customers on importance and satisfaction for each outcome.</li><li>Calculate opportunity scores and plot the landscape.</li><li>Lead product and messaging with the highest-scoring outcomes.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Map the job</dt><dd>The job: keep production equipment running.</dd><dt>Rate outcome statements</dt><dd>Tessera writes 60 outcome statements and surveys 180 maintenance managers.</dd><dt>Underserved outcomes</dt><dd>“Minimise the time to learn a machine is about to fail”: importance 9.1, satisfaction 3.2.</dd><dt>Overserved outcomes</dt><dd>“Minimise the effort to schedule routine checks”: importance 6.0, satisfaction 8.5.</dd><dt>Score and choose</dt><dd>Early failure warning scores 15.0, so it leads Tessera’s roadmap and messaging.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Outcome statements that describe solutions (“have a dashboard”).</li><li>Averaging across segments that have different needs.</li><li>Treating overserved outcomes as strengths to advertise.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>OUTCOME-DRIVEN INNOVATION — [Product]
+
+Job:
+Outcome statement                      Importance   Satisfaction   Score
+Minimise the time it takes to …
+Minimise the likelihood that …
+
+Score = Importance + max(Importance − Satisfaction, 0)
+Top opportunities:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Anthony W. Ulwick, What Customers Want, McGraw-Hill, 2005.</li><li>Anthony W. Ulwick, Jobs to Be Done: Theory to Practice, Idea Bite Press, 2016.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="jobs-to-be-done.html">Jobs-to-be-Done</a></li><li><a href="kano-model.html">Kano Model</a></li><li><a href="value-proposition-canvas.html">Value Proposition Canvas</a></li><li><a href="forces-of-progress.html">Forces of Progress</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Finding underserved needs to build and message around</dd><dt>You need</dt><dd>A defined job and a survey of 100+ customers</dd><dt>You get</dt><dd>Outcomes ranked by opportunity score</dd><dt>Time</dt><dd>Four to six weeks</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"chart","viewBox":"0 0 800 450","left":100,"alt":"Opportunity landscape: outcomes plotted by satisfaction and importance, with underserved outcomes above the line and overserved below.","axesStep":1,"x":{"domain":[0,10],"title":"Satisfaction","low":"Low","high":"High"},"y":{"domain":[0,10],"title":"Importance","low":"Low","high":"High"},"curves":[{"step":2,"points":[[0,0],[10,10]],"label":"Importance = satisfaction","labelAt":[9.6,9.6],"anchor":"end","dx":-4,"dy":30,"max":26}],"markers":[{"step":3,"x":3.2,"y":9.1,"label":"Underserved","ex":"Early failure warning: 15.0","anchor":"start","dx":12,"dy":5},{"step":4,"x":8.5,"y":6,"label":"Overserved","ex":"Scheduling routine checks: 6.0","anchor":"end","dx":-12,"dy":22},{"step":5,"x":6.8,"y":7.5,"label":"Served as expected","ex":"Audit reports: 8.2","anchor":"end","dx":-12,"dy":-8}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

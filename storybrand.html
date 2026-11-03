@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoryBrand — Topoi</title>
+<meta name="description" content="Tell your marketing as a story where the customer is the hero and your company is the guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-messaging-and-storytelling"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-6 4.5z"/><path d="M8 9h8M8 12h5"/></svg>Messaging and storytelling</a></p>
+    <h1>StoryBrand</h1>
+    <p class="lede">Tell your marketing as a story where the customer is the hero and your company is the guide.</p>
+    <p class="origin">Donald Miller, 2017</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the StoryBrand">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Nordhaus Home</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">A character</span></button>
+        <p class="gen">The customer is the hero, with something they want.</p><p class="ex">Someone moving into a new flat.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Has a problem</span></button>
+        <p class="gen">Name the external problem, and how it makes them feel.</p><p class="ex">Empty rooms, no time, and fear of costly mistakes.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Meets a guide</span></button>
+        <p class="gen">Your company, showing empathy and authority.</p><p class="ex">Nordhaus room planners who have furnished thousands of homes.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Who gives a plan</span></button>
+        <p class="gen">A few simple steps that make buying feel safe.</p><p class="ex">Book a free plan, choose your pieces, we deliver and assemble.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Calls to action</span></button>
+        <p class="gen">A clear, direct call to act.</p><p class="ex">“Book a free room plan.”</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Avoids failure</span></button>
+        <p class="gen">What is at stake if they do nothing.</p><p class="ex">Weeks of boxes and furniture that doesn’t fit.</p></li>
+      <li><button type="button"><span class="n">7</span><span class="t">Ends in success</span></button>
+        <p class="gen">The life after the problem is solved.</p><p class="ex">A home you’re happy to invite friends to.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Is our customer the hero of our marketing, or are we?</p></section>
+      <section><h2>When to use it</h2><ul><li>Rewriting a website home page.</li><li>Messages that talk about the company more than the customer.</li><li>Campaigns that need one simple story.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Detailed technical buying, where buyers need specifics more than story.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Fill each of the seven parts in one sentence.</li><li>Check that the customer, not the company, is the hero.</li><li>Turn the plan and call to action into the page structure.</li><li>Test the page with a few target customers.</li></ol></section>
+      <section><h2>Worked example: Nordhaus Home</h2>
+        <p>Nordhaus Home is a fictional chain of 35 home-goods stores.</p>
+        <dl class="example-list"><dt>A character</dt><dd>Someone moving into a new flat.</dd><dt>Has a problem</dt><dd>Empty rooms, no time, and fear of costly mistakes.</dd><dt>Meets a guide</dt><dd>Nordhaus room planners who have furnished thousands of homes.</dd><dt>Who gives a plan</dt><dd>Book a free plan, choose your pieces, we deliver and assemble.</dd><dt>Calls to action</dt><dd>“Book a free room plan.”</dd><dt>Avoids failure</dt><dd>Weeks of boxes and furniture that doesn’t fit.</dd><dt>Ends in success</dt><dd>A home you’re happy to invite friends to.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Casting your company as the hero.</li><li>A plan with too many steps.</li><li>Overstating the stakes until it sounds like fear selling.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>STORYBRAND — [Product]
+
+Character (who, what they want):
+Problem (external, how it feels):
+Guide (empathy, authority):
+Plan (3 steps):
+Call to action:
+Failure to avoid:
+Success:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Donald Miller, Building a StoryBrand, HarperCollins Leadership, 2017.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="message-hierarchy.html">Message Hierarchy</a></li><li><a href="value-proposition-formula.html">Value Proposition Formula</a></li><li><a href="strategic-narrative.html">Strategic Narrative</a></li><li><a href="messaging-house.html">Messaging House</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Website and campaign messaging</dd><dt>You need</dt><dd>A clear customer problem and a simple plan to solve it</dd><dt>You get</dt><dd>A clear, customer-centred message for web and campaigns</dd><dt>Time</dt><dd>One workshop</dd><dt>Example company</dt><dd>Nordhaus Home, retail</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":7,"diagram":{"type":"chain","viewBox":"0 0 800 490","alt":"StoryBrand: a character has a problem, meets a guide who gives a plan and calls to action, helping avoid failure and end in success.","nodes":[{"step":1,"title":"A character","text":"The customer, who wants something.","ex":"Moving into a new flat."},{"step":2,"title":"Has a problem","text":"External problem and feeling.","ex":"Empty rooms, no time."},{"step":3,"title":"Meets a guide","text":"You: empathy and authority.","ex":"Nordhaus room planners."},{"step":4,"title":"Gives a plan","text":"Simple steps.","ex":"Plan, choose, delivered."},{"step":5,"title":"Calls to action","text":"One clear ask.","ex":"Book a free room plan."},{"step":6,"title":"Avoids failure","text":"The stakes.","ex":"Weeks of boxes."},{"step":7,"title":"Ends in success","text":"Life after.","ex":"A home to invite friends to."}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>
