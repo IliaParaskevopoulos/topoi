@@ -408,7 +408,7 @@
         s('polygon', { points: pts.map(function (p) { return p.join(','); }).join(' '), 'class': 'area' }, g);
         var ty = i === 0 ? y0 + h * 0.78 : y0 + h * (cells.length === 1 ? 0.42 : 0.5);
         var cx = cells.length === 1 ? ax : (j === 0 ? ax - half(ty + 12) * 0.5 : ax + half(ty + 12) * 0.5);
-        text(g, cx, ty, c.title, { anchor: 'middle', size: i === 0 ? 13 : 15, cls: 'title' + (i === 0 ? ' halo' : '') });
+        text(g, cx, ty, c.title, { anchor: 'middle', size: i === 0 ? 13 : (cells.length > 1 && i < 2 && c.title.length > 9 ? 12 : 15), cls: 'title' + (i === 0 ? ' halo' : '') });
         if (c.text) dual(g, cx, ty + 19, c.text, c.ex, { anchor: 'middle', size: 12.5, cls: 'body', max: cells.length === 1 ? 34 : 19 });
       });
       if (lv.side) {

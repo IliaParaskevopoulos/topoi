@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Atomization — Topoi</title>
+<meta name="description" content="Turn one substantial piece of content into many smaller pieces for different channels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-content-and-channels"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 11h7M9 15h7"/></svg>Content and channels</a></p>
+    <h1>Content Atomization</h1>
+    <p class="lede">Turn one substantial piece of content into many smaller pieces for different channels.</p>
+    <p class="origin">Todd Defren, 2008</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Content Atomization">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Start with a big piece</span></button>
+        <p class="gen">Choose one substantial piece: a report, webinar, study or guide.</p><p class="ex">Tessera’s webinar on cutting unplanned downtime.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Break it into parts</span></button>
+        <p class="gen">Cut it into smaller pieces, each useful on its own and fitted to a channel.</p><p class="ex">Three short clips, a blog post, a checklist, five social posts, a newsletter piece.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Link back</span></button>
+        <p class="gen">Every small piece points back to the full piece.</p><p class="ex">Each clip links to the full webinar recording.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Are we getting full value from each big piece of content we create?</p></section>
+      <section><h2>When to use it</h2><ul><li>After producing a major report, webinar or study.</li><li>Small teams that need more reach without more production.</li><li>Planning a launch content calendar.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Thin content that does not hold up when split.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Plan the pieces before you create the big piece.</li><li>Cut pieces that stand alone and suit each channel.</li><li>Schedule them over weeks, not one day.</li><li>Link every piece back to the source.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Start with a big piece</dt><dd>Tessera’s webinar on cutting unplanned downtime.</dd><dt>Break it into parts</dt><dd>Three short clips, a blog post, a checklist, five social posts, a newsletter piece.</dd><dt>Link back</dt><dd>Each clip links to the full webinar recording.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Posting the same text in every channel.</li><li>Pieces that make no sense without the original.</li><li>Releasing everything at once.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>ATOMIZATION — [Big piece]
+
+Pieces:
+  Channel     Format     Date     Link back
+1.
+2.
+3.</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Todd Defren, “Content Atomization”, PR-Squared blog, 2008.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="cope.html">Create Once, Publish Everywhere</a></li><li><a href="hub-hero-hygiene.html">Hub, Hero, Hygiene</a></li><li><a href="peso-model.html">PESO Model</a></li><li><a href="topic-clusters.html">Topic Clusters</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Getting more reach from major content</dd><dt>You need</dt><dd>One substantial piece of content</dd><dt>You get</dt><dd>A set of smaller pieces for every channel</dd><dt>Time</dt><dd>A day per major piece</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":3,"diagram":{"type":"tree","viewBox":"0 0 800 260","alt":"Content atomization: one big piece of content broken into clips, a blog post, a checklist and social posts.","nodes":[{"id":"w","step":1,"x":260,"y":12,"w":280,"h":72,"label":"Big piece","text":"Report, webinar or study","ex":"Downtime webinar"},{"id":"a","parent":"w","step":2,"x":14,"y":160,"w":180,"h":76,"label":"Piece","text":"Short clips","ex":"Three video clips"},{"id":"b","parent":"w","step":2,"x":210,"y":160,"w":180,"h":76,"label":"Piece","text":"Article","ex":"Blog post"},{"id":"c","parent":"w","step":2,"x":406,"y":160,"w":180,"h":76,"label":"Piece","text":"Tool","ex":"Downtime checklist"},{"id":"d","parent":"w","step":2,"x":602,"y":160,"w":180,"h":76,"label":"Piece","text":"Social posts","ex":"Five LinkedIn posts"}],"target":{"id":"w","step":3,"label":"All link back","ex":"Clips link to webinar"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>
