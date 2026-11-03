@@ -1,7 +1,7 @@
 module.exports = {
   slug: 'launch-tiers',
   name: 'Launch Tiers',
-  company: 'arvena',
+  company: 'tessera',
   origin: 'Common product marketing practice; no single author',
   oneLiner: 'Not every release deserves a big launch. Sort releases into tiers, each with its own level of effort.',
   question: 'How much launch effort does this release deserve?',
@@ -12,18 +12,18 @@ module.exports = {
     'Time': 'Set up once, then minutes per release'
   },
   steps: [
-    { title: 'Tier 3', text: 'Small changes and fixes. Tell the people who need to know, with little extra effort.', example: 'A new capsule colour: release note, sales email and website update.' },
-    { title: 'Tier 2', text: 'Meaningful improvements for existing customers. Some marketing, some sales enablement.', example: 'A new capsule size: customer webinar, sales training and trade-press news.' },
-    { title: 'Tier 1', text: 'Major launches that change the market position or open new segments. Full campaign and full enablement.', example: 'The acid-resistant capsule: trade-fair launch, press, campaign and a sample programme.' },
-    { title: 'Decide with criteria', text: 'Choose the tier with agreed criteria such as revenue impact, customers affected and competitive importance, not by who asks loudest.', example: 'Arvena scores each release on revenue, customers affected and differentiation, from 1 to 3 each.' }
+    { title: 'Tier 3', text: 'Small changes and fixes. Tell the people who need to know, with little extra effort.', example: 'A new report template: release note, in-app message and help-centre update.' },
+    { title: 'Tier 2', text: 'Meaningful improvements for existing customers. Some marketing, some sales enablement.', example: 'An SAP connector: customer webinar, sales training and partner announcement.' },
+    { title: 'Tier 1', text: 'Major launches that change the market position or open new segments. Full campaign and full enablement.', example: 'Tessera Predict: launch event, press, campaign and a free pilot programme.' },
+    { title: 'Decide with criteria', text: 'Choose the tier with agreed criteria such as revenue impact, customers affected and competitive importance, not by who asks loudest.', example: 'Tessera scores each release on revenue, customers affected and differentiation, from 1 to 3 each.' }
   ],
   diagram: {
     type: 'tiers', viewBox: '0 0 800 450',
     alt: 'Three launch tiers rising from tier 3 for small changes to tier 1 for major launches, each with its activities.',
     tiers: [
-      { step: 1, height: 230, title: 'Tier 3', sub: 'Small changes', subEx: 'New capsule colour', items: '• Release note\n• Update docs', itemsEx: '• Release note\n• Sales email\n• Website update' },
-      { step: 2, height: 300, title: 'Tier 2', sub: 'Meaningful updates', subEx: 'New capsule size', items: '• Customer email\n• Sales briefing\n• Blog post', itemsEx: '• Customer webinar\n• Sales training\n• Trade-press news' },
-      { step: 3, height: 370, title: 'Tier 1', sub: 'Major launches', subEx: 'Acid-resistant capsule', items: '• Full campaign\n• Press and events\n• Full enablement', itemsEx: '• Trade-fair launch\n• Press and campaign\n• Sample programme' }
+      { step: 1, height: 230, title: 'Tier 3', sub: 'Small changes', subEx: 'New report template', items: '• Release note\n• Update docs', itemsEx: '• Release note\n• In-app message\n• Help-centre update' },
+      { step: 2, height: 300, title: 'Tier 2', sub: 'Meaningful updates', subEx: 'SAP connector', items: '• Customer email\n• Sales briefing\n• Blog post', itemsEx: '• Customer webinar\n• Sales training\n• Partner news' },
+      { step: 3, height: 370, title: 'Tier 1', sub: 'Major launches', subEx: 'Tessera Predict', items: '• Full campaign\n• Press and events\n• Full enablement', itemsEx: '• Launch event\n• Press and campaign\n• Free pilot programme' }
     ],
     note: { step: 4, at: 2, label: 'Choose with agreed criteria', ex: 'Scores 8 of 9: Tier 1' }
   },

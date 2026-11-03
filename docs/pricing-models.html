@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing Models — Topoi</title>
+<meta name="description" content="The main ways to structure what customers pay, from a single flat fee to hybrids.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-pricing-and-packaging"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V3h9l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>Pricing and packaging</a></p>
+    <h1>Pricing Models</h1>
+    <p class="lede">The main ways to structure what customers pay, from a single flat fee to hybrids.</p>
+    <p class="origin">Common pricing practice; no single author</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Pricing Models">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Lumora Diagnostics</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Flat fee</span></button>
+        <p class="gen">One price for everything. Simple, but leaves money on the table with heavy users.</p><p class="ex">A monthly fee per practice, any number of tests.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Per user</span></button>
+        <p class="gen">Price per person using it. Easy to understand; can slow adoption.</p><p class="ex">A fee per clinician.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Usage-based</span></button>
+        <p class="gen">Pay for what you use. Fair and grows with value; harder to predict.</p><p class="ex">A fee per test cartridge.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Tiered packages</span></button>
+        <p class="gen">Several packages at different prices for different needs.</p><p class="ex">Starter, Practice and Group packages.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Hybrid</span></button>
+        <p class="gen">A base fee plus usage, or packages with usage limits. Often the best fit, but keep it simple.</p><p class="ex">Lumora chooses device rental plus a fee per test.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which pricing model fits how our customers buy and get value?</p></section>
+      <section><h2>When to use it</h2><ul><li>Launching a product or entering a new segment.</li><li>The current model causes friction in sales or renewals.</li><li>Usage and value vary widely between customers.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>As a quick fix for low prices; the problem may be value, not model.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Map how value grows for customers.</li><li>List which models fit that pattern.</li><li>Model revenue and customer cost for typical accounts.</li><li>Test the favourite with customers and sales before switching.</li></ol></section>
+      <section><h2>Worked example: Lumora Diagnostics</h2>
+        <p>Lumora Diagnostics is a fictional company that makes a rapid blood-test reader for GP clinics.</p>
+        <dl class="example-list"><dt>Flat fee</dt><dd>A monthly fee per practice, any number of tests.</dd><dt>Per user</dt><dd>A fee per clinician.</dd><dt>Usage-based</dt><dd>A fee per test cartridge.</dd><dt>Tiered packages</dt><dd>Starter, Practice and Group packages.</dd><dt>Hybrid</dt><dd>Lumora chooses device rental plus a fee per test.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>A hybrid so complex buyers cannot work out the bill.</li><li>Copying a competitor’s model without checking the fit.</li><li>Switching models without a plan for existing customers.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>PRICING MODEL — [Product]
+
+How value grows:
+Models considered:
+Typical customer cost under each:
+Chosen model:
+Plan for existing customers:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A common pricing practice; there is no single original source.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="value-metric.html">Value Metric</a></li><li><a href="good-better-best.html">Good, Better, Best</a></li><li><a href="value-based-pricing.html">Value-Based Pricing</a></li><li><a href="price-waterfall.html">Price Waterfall</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Choosing or changing your pricing structure</dd><dt>You need</dt><dd>How customers use and value the product</dd><dt>You get</dt><dd>A model that fits buyers and your economics</dd><dt>Time</dt><dd>Two to three weeks</dd><dt>Example company</dt><dd>Lumora Diagnostics, diagnostics</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"chain","viewBox":"0 0 800 490","alt":"Pricing models: flat fee, per user, usage-based, tiered packages and hybrid.","nodes":[{"step":1,"title":"Flat fee","text":"One price for all.","ex":"Monthly fee per practice."},{"step":2,"title":"Per user","text":"Price per person.","ex":"Per clinician."},{"step":3,"title":"Usage-based","text":"Pay for what you use.","ex":"Per test cartridge."},{"step":4,"title":"Tiered packages","text":"Packages for different needs.","ex":"Starter, Practice, Group."},{"step":5,"title":"Hybrid","text":"Base fee plus usage.","ex":"Device rental plus per test."}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

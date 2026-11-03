@@ -7,13 +7,13 @@ const path = require('path');
 const ROOT = __dirname;
 const OUT = path.join(ROOT, 'docs'); // served by GitHub Pages
 const BRAND = 'Topoi';
-const HERO = ['five-forces', 'golden-circle', 'crossing-the-chasm', 'flywheel', 'van-westendorp', 'value-proposition-canvas', 'ansoff-matrix', 'opportunity-solution-tree'];
+const HERO = ['five-forces', 'crossing-the-chasm', 'value-proposition-canvas', 'van-westendorp', 'bow-tie', 'strategy-canvas', 'messaging-house', 'perceptual-map'];
 const AUTHOR = { name: 'Ilia Paraskevopoulos', url: 'https://iliaparaskevopoulos.com' };
 
 const catalog = require('./content/_catalog.js');
 const cast = require('./content/_cast.js');
 const files = fs.readdirSync(path.join(ROOT, 'content')).filter(f => f.endsWith('.js') && !f.startsWith('_'));
-const all = files.map(f => require(path.join(ROOT, 'content', f)));
+const all = files.flatMap(f => [].concat(require(path.join(ROOT, 'content', f))));
 const bySlug = Object.fromEntries(all.map(f => [f.slug, f]));
 
 const wasMap = {};
@@ -62,11 +62,14 @@ const shell = (title, desc, body) => `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/engine.js" defer></script>
 </head>
 <body>
-<header class="site"><a class="brand" href="index.html">${BRAND}<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="${AUTHOR.url}">by ${AUTHOR.name}</a></header>
+<header class="site"><a class="brand" href="index.html" aria-label="${BRAND}, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="${AUTHOR.url}">by ${AUTHOR.name}</a></header>
 ${body}
 <footer class="foot">${BRAND} by <a href="${AUTHOR.url}">${AUTHOR.name}</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
 </body>
@@ -81,9 +84,8 @@ function frameworkPage(f) {
   const glance = Object.entries(f.glance).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')
     + `<dt>Example company</dt><dd>${esc(co.name)}, ${esc(co.industry.toLowerCase())}</dd>`;
   const li = arr => arr.map(x => `<li>${esc(x)}</li>`).join('');
-  const related = f.related.map(r => wasMap[r] || r).map(r => bySlug[r]
-    ? `<li><a href="${r}.html">${esc(bySlug[r].name)}</a></li>`
-    : `<li><span>${esc(r)}, coming soon</span></li>`).join('');
+  const related = f.related.map(r => wasMap[r] || r).filter(r => bySlug[r] && r !== f.slug)
+    .map(r => `<li><a href="${r}.html">${esc(bySlug[r].name)}</a></li>`).join('');
   const example = f.steps.map(s => `<dt>${esc(s.title)}</dt><dd>${esc(s.example)}</dd>`).join('');
 
   const body = `
@@ -127,7 +129,7 @@ function frameworkPage(f) {
       <section><h2>Common mistakes</h2><ul>${li(f.pitfalls)}</ul></section>
       <section class="template"><h2>Template</h2><pre>${esc(f.template)}</pre><button type="button" data-act="copy">Copy template</button></section>
       <section class="sources"><h2>Sources</h2><ul>${li(f.sources)}</ul></section>
-      <section><h2>Related frameworks</h2><ul class="related">${related}</ul></section>
+      ${related ? `<section><h2>Related frameworks</h2><ul class="related">${related}</ul></section>` : ''}
     </article>
     <aside class="glance" aria-label="At a glance"><dl>${glance}</dl></aside>
   </div>
@@ -139,7 +141,7 @@ function frameworkPage(f) {
 function indexPage() {
   const nav = catalog.map(c => {
     const drawn = c.items.filter(i => typeof i === 'object').length;
-    return `<li><a href="#${catId(c.name)}">${icon(c.icon)}${esc(c.name)}</a> <span>${drawn} of ${c.items.length}</span></li>`;
+    return `<li><a href="#${catId(c.name)}">${icon(c.icon)}${esc(c.name)}</a> <span>${drawn === c.items.length ? drawn : drawn + ' of ' + c.items.length}</span></li>`;
   }).join('');
 
   const sections = catalog.map(c => {
@@ -177,7 +179,7 @@ function indexPage() {
     </div>
   </div>
   <nav class="catnav" aria-label="Categories">
-    <p>${all.length} of ${total} frameworks drawn so far, in ${catalog.length} categories.</p>
+    <p>${all.length === total ? `${total} practical product marketing frameworks in ${catalog.length} categories.` : `${all.length} of ${total} frameworks drawn so far, in ${catalog.length} categories.`}</p>
     <ul>${nav}</ul>
   </nav>
   ${sections}
@@ -196,6 +198,7 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'src/site.css'), path.join(OUT, 'assets/site.css'));
 fs.copyFileSync(path.join(ROOT, 'src/engine.js'), path.join(OUT, 'assets/engine.js'));
+fs.readdirSync(path.join(ROOT, 'src/brand')).forEach(f => fs.copyFileSync(path.join(ROOT, 'src/brand', f), path.join(OUT, 'assets', f)));
 fs.writeFileSync(path.join(OUT, 'index.html'), indexPage());
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 all.forEach(f => fs.writeFileSync(path.join(OUT, f.slug + '.html'), frameworkPage(f)));

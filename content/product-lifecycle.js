@@ -7,7 +7,7 @@ const pts = f => { const a = []; for (let t = 0; t <= 10.0001; t += 0.1) a.push(
 module.exports = {
   slug: 'product-lifecycle',
   name: 'Product Lifecycle',
-  company: 'arvena',
+  company: 'tessera',
   origin: 'Joel Dean, 1950; popularised by Theodore Levitt, 1965',
   oneLiner: 'Products move through introduction, growth, maturity and decline, and each stage calls for different marketing.',
   question: 'Where is each product in its life, and what should marketing do differently because of it?',
@@ -20,22 +20,22 @@ module.exports = {
   steps: [
     { title: 'Sales over time',
       text: 'Track sales of a product or category from launch to withdrawal. The curve rises, flattens and eventually falls.',
-      example: 'Arvena places each of its capsule lines on one curve.' },
+      example: 'Tessera places each of its products on one curve.' },
     { title: 'Introduction',
       text: 'Sales are low and costs high. The job is to educate the market, win first customers and prove the product works.',
-      example: 'The acid-resistant capsule: pilot runs with a few brands and heavy technical support.' },
+      example: 'Tessera Predict, the new failure-prediction module: pilots with a few plants and hands-on onboarding.' },
     { title: 'Growth',
       text: 'Sales rise fast and competitors arrive. The job is to build preference, widen distribution and scale delivery.',
-      example: 'Printed and coloured capsules for premium brands: demand is rising and rivals are launching similar shells.' },
+      example: 'The technician mobile app: usage is rising fast and competitors are launching their own apps.' },
     { title: 'Maturity',
       text: 'Growth slows and competition shifts to price. The job is to defend share, differentiate on service and cut cost.',
-      example: 'The standard plant-based capsule: stable volume, price pressure, competing on lead times.' },
+      example: 'Core maintenance scheduling: steady renewals, price pressure, competing on ease of use and support.' },
     { title: 'Decline',
       text: 'Sales fall as needs change or better options appear. Harvest, reposition, or plan the withdrawal.',
-      example: 'The first-generation shell with slower dissolution, which customers are replacing with the newer version.' },
+      example: 'The on-premise edition, which customers are leaving for the cloud version.' },
     { title: 'Profit follows later',
       text: 'Profit usually trails sales: negative at launch, highest in late growth or early maturity, then shrinking.',
-      example: 'Profit from the mature capsule range pays for the acid-resistant launch.' }
+      example: 'Profit from core scheduling pays for the Predict launch.' }
   ],
   diagram: {
     type: 'chart',
@@ -48,10 +48,10 @@ module.exports = {
     y: { domain: [-0.32, 1.3], title: 'Sales and profit' },
     hlines: [{ v: 0, step: 6, label: 'Break-even', ex: 'Break-even', at: 6.5, below: true }],
     bands: [
-      { step: 2, x0: 0, x1: 2.5, label: 'Introduction', ex: 'Acid-resistant' },
-      { step: 3, x0: 2.5, x1: 5, label: 'Growth', ex: 'Printed capsules' },
-      { step: 4, x0: 5, x1: 8, label: 'Maturity', ex: 'Standard capsule' },
-      { step: 5, x0: 8, x1: 10, label: 'Decline', ex: 'First-generation' }
+      { step: 2, x0: 0, x1: 2.5, label: 'Introduction', ex: 'Predict module' },
+      { step: 3, x0: 2.5, x1: 5, label: 'Growth', ex: 'Mobile app' },
+      { step: 4, x0: 5, x1: 8, label: 'Maturity', ex: 'Core scheduling' },
+      { step: 5, x0: 8, x1: 10, label: 'Decline', ex: 'On-premise edition' }
     ],
     curves: [
       { step: 1, points: pts(sales), label: 'Sales', labelAt: [6.4, sales(6.4)], dy: -12, anchor: 'middle' },

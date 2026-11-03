@@ -132,25 +132,56 @@
     }
   };
 
-  /* Ordered chain of components, serpentine over two rows */
+  /* Ordered chain of components, serpentine over two rows (3 or 4 per row) */
   R.chain = function (svg, d) {
-    var ah = arrowDefs(svg);
-    var w = 220, h = 176, cols = [30, 290, 550], rows = [24, 284];
-    var slots = [[0, 0], [1, 0], [2, 0], [2, 1], [1, 1], [0, 1]];
-    d.nodes.forEach(function (n, i) {
-      var c = slots[i], x = cols[c[0]], y = rows[c[1]], g = step(svg, n.step);
+    var ah = arrowDefs(svg), n = d.nodes.length, per = n > 6 ? 4 : 3;
+    var gap = per === 4 ? 26 : 40, w = per === 4 ? 172 : 220, x0 = per === 4 ? 21 : 30;
+    var h = 176, rows = [24, 284], cols = [], slots = [];
+    for (var c = 0; c < per; c++) cols.push(x0 + c * (w + gap));
+    for (var i = 0; i < n; i++) slots.push(i < per ? [i, 0] : [per - 1 - (i - per), 1]);
+    var tMax = per === 4 ? 17 : 20, bMax = per === 4 ? 23 : 30;
+    d.nodes.forEach(function (nd, i) {
+      var sl = slots[i], x = cols[sl[0]], y = rows[sl[1]], g = step(svg, nd.step);
       if (i > 0) {
         var pc = slots[i - 1], px = cols[pc[0]], py = rows[pc[1]], line;
-        if (pc[1] === c[1] && c[0] > pc[0]) line = [px + w + 4, py + h / 2, x - 6, y + h / 2];
-        else if (pc[1] === c[1]) line = [px - 4, py + h / 2, x + w + 6, y + h / 2];
+        if (pc[1] === sl[1] && sl[0] > pc[0]) line = [px + w + 4, py + h / 2, x - 6, y + h / 2];
+        else if (pc[1] === sl[1]) line = [px - 4, py + h / 2, x + w + 6, y + h / 2];
         else line = [px + w / 2, py + h + 4, x + w / 2, y - 6];
         s('line', { x1: line[0], y1: line[1], x2: line[2], y2: line[3], 'class': 'pen draw', pathLength: 1, 'marker-end': ah }, g);
       }
-      s('rect', { x: x, y: y, width: w, height: h, rx: 3, 'class': 'area' + (n.optional ? ' optional' : '') }, g);
-      text(g, x + 16, y + 30, String(i + 1), { size: 14, cls: 'num' });
-      text(g, x + 16, y + 56, n.title, { size: 18, cls: 'title', max: 22 });
-      dual(g, x + 16, y + (n.title.length > 22 ? 104 : 82), n.text, n.ex, { size: 13.5, cls: 'body', max: 27 });
+      s('rect', { x: x, y: y, width: w, height: h, rx: 3, 'class': 'area' + (nd.optional ? ' optional' : '') }, g);
+      text(g, x + 14, y + 28, String(i + 1), { size: 14, cls: 'num' });
+      var tl = wrap(nd.title, tMax).length;
+      text(g, x + 14, y + 54, nd.title, { size: per === 4 ? 16 : 18, cls: 'title', max: tMax });
+      dual(g, x + 14, y + 54 + tl * 23 + 4, nd.text, nd.ex, { size: 13, cls: 'body', max: bMax });
     });
+  };
+
+  /* Bow-tie: stages narrow into a commitment point, then widen again */
+  R.bowtie = function (svg, d) {
+    var cy = 165, L = 20, Rr = 780, kL = 350, kR = 450, big = 290, small = 74;
+    var left = d.left, right = d.right;
+    function hAt(x) {
+      if (x <= kL) return big - (big - small) * (x - L) / (kL - L);
+      return small + (big - small) * (x - kR) / (Rr - kR);
+    }
+    function slice(x0, x1, st, g) {
+      var h0 = hAt(x0), h1 = hAt(x1);
+      s('polygon', { points: [x0, cy - h0 / 2, x1, cy - h1 / 2, x1, cy + h1 / 2, x0, cy + h0 / 2].join(' '), 'class': 'area' }, g);
+      text(g, (x0 + x1) / 2, cy + 5, st.title, { anchor: 'middle', size: 14, cls: 'title', max: 12, valign: 'middle' });
+      dual(g, (x0 + x1) / 2, cy + big / 2 + 28, st.text, st.ex, { anchor: 'middle', size: 12, cls: 'body', max: 15 });
+    }
+    var lw = (kL - L) / left.length, rw = (Rr - kR) / right.length;
+    left.forEach(function (st, i) { slice(L + i * lw + 2, L + (i + 1) * lw - 2, st, step(svg, st.step)); });
+    var kg = step(svg, d.knot.step);
+    s('rect', { x: kL + 2, y: cy - small / 2, width: kR - kL - 4, height: small, rx: 3, 'class': 'area core' }, kg);
+    text(kg, 400, cy + 5, d.knot.title, { anchor: 'middle', size: 15, cls: 'title' });
+    dual(kg, 400, cy + big / 2 + 28, d.knot.text, d.knot.ex, { anchor: 'middle', size: 12, cls: 'body', max: 15 });
+    right.forEach(function (st, i) { slice(kR + i * rw + 2, kR + (i + 1) * rw - 2, st, step(svg, st.step)); });
+    if (d.note) {
+      var k = step(svg, d.note.step);
+      dual(k, 615, 24, d.note.label, d.note.ex, { anchor: 'middle', size: 14, cls: 'pen-text strong halo', max: 40 });
+    }
   };
 
   /* Funnel with a metric per stage and an optional leak marker */
@@ -377,7 +408,7 @@
         s('polygon', { points: pts.map(function (p) { return p.join(','); }).join(' '), 'class': 'area' }, g);
         var ty = i === 0 ? y0 + h * 0.78 : y0 + h * (cells.length === 1 ? 0.42 : 0.5);
         var cx = cells.length === 1 ? ax : (j === 0 ? ax - half(ty + 12) * 0.5 : ax + half(ty + 12) * 0.5);
-        text(g, cx, ty, c.title, { anchor: 'middle', size: 15, cls: 'title' });
+        text(g, cx, ty, c.title, { anchor: 'middle', size: i === 0 ? 13 : 15, cls: 'title' + (i === 0 ? ' halo' : '') });
         if (c.text) dual(g, cx, ty + 19, c.text, c.ex, { anchor: 'middle', size: 12.5, cls: 'body', max: cells.length === 1 ? 34 : 19 });
       });
       if (lv.side) {
@@ -466,7 +497,7 @@
     var rowH = d.rowH || 62, y0 = 18;
     d.parts.forEach(function (p, i) {
       var y = y0 + i * rowH, g = step(svg, p.step);
-      text(g, 186, y + 30, p.lead, { anchor: 'end', size: 17, cls: 'title' });
+      text(g, 186, y + (rowH - 12) / 2 + 5, p.lead, { anchor: 'end', size: p.lead.length > 16 ? 14.5 : 17, cls: 'title', max: 18, valign: 'middle' });
       s('rect', { x: 200, y: y, width: 576, height: rowH - 12, rx: 3, 'class': 'area' }, g);
       dual(g, 216, y + (rowH - 12) / 2 + 5, p.slot, p.ex, { size: 14.5, cls: 'body', max: 66, valign: 'middle' });
     });

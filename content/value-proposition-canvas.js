@@ -1,7 +1,7 @@
 module.exports = {
   slug: 'value-proposition-canvas',
   name: 'Value Proposition Canvas',
-  company: 'arvena',
+  company: 'tessera',
   origin: 'Alexander Osterwalder and colleagues, Strategyzer, 2014',
   oneLiner: 'Two shapes side by side: what a customer is trying to get done, and how your product helps. Fit is where they match.',
   question: 'Does what we offer address the jobs, pains and gains that matter most to this customer?',
@@ -14,31 +14,31 @@ module.exports = {
   steps: [
     { title: 'Customer profile',
       text: 'Start on the right with one customer segment. Draw the profile before you think about your product.',
-      example: 'Segment: quality managers at mid-size probiotic brands.' },
+      example: 'Segment: maintenance managers at manufacturing plants with 50 to 500 staff.' },
     { title: 'Customer jobs',
       text: 'What they are trying to get done: functional tasks, social goals and emotional needs.',
-      example: 'Release batches that pass stability testing. Keep the supplier list short.' },
+      example: 'Keep production lines running. Pass safety and quality audits.' },
     { title: 'Pains',
       text: 'What annoys or blocks them before, during or after the job: risks, obstacles and bad outcomes.',
-      example: 'Coating failures that scrap whole batches. Long lead times.' },
+      example: 'Unplanned breakdowns, and work orders lost on paper and spreadsheets.' },
     { title: 'Gains',
       text: 'The outcomes and benefits they want, including ones that would surprise them.',
-      example: 'Fewer process steps. A clean-label claim on the pack.' },
+      example: 'Fewer stoppages, and audit records ready in minutes.' },
     { title: 'Value map',
       text: 'Now move to the left. The square describes your offer for this segment.',
-      example: 'Arvena’s acid-resistant capsule and the technical service around it.' },
+      example: 'Tessera’s maintenance planning software and its onboarding service.' },
     { title: 'Products and services',
       text: 'List what you offer this segment.',
-      example: 'Acid-resistant capsules, a dissolution data pack and lab trial support.' },
+      example: 'Maintenance scheduling, a mobile app for technicians, and sensor alerts.' },
     { title: 'Pain relievers',
       text: 'How your offer removes or reduces specific pains. Link each one to a pain on the right.',
-      example: 'No coating step, so no coating failures.' },
+      example: 'Alerts before parts fail, and every work order in one place.' },
     { title: 'Gain creators',
       text: 'How your offer produces the gains customers want.',
-      example: 'One fewer process step and a coating-free label claim.' },
+      example: 'Planned instead of emergency repairs, and one-click audit reports.' },
     { title: 'Check the fit',
       text: 'Fit is when your pain relievers and gain creators address the pains and gains that matter most. Rank them, then test with real customers.',
-      example: 'Interviews show scrapped batches are the top pain, so that leads the message.' }
+      example: 'Interviews show unplanned breakdowns are the top pain, so that leads the message.' }
   ],
   diagram: {
     type: 'vpc',
@@ -47,12 +47,12 @@ module.exports = {
     profile: { step: 1, title: 'Customer profile' },
     valueMap: { step: 5, title: 'Value map' },
     parts: {
-      jobs: { step: 2, title: 'Jobs', text: 'Tasks, goals and needs', ex: 'Pass stability tests' },
-      pains: { step: 3, title: 'Pains', text: 'Risks and obstacles', ex: 'Scrapped batches' },
-      gains: { step: 4, title: 'Gains', text: 'Outcomes they want', ex: 'Fewer steps, clean label' },
-      products: { step: 6, title: 'Products and services', text: 'What you offer this segment', ex: 'Acid-resistant capsules, data pack, trial support' },
-      painRelievers: { step: 7, title: 'Pain relievers', text: 'How you remove pains', ex: 'No coating step to fail' },
-      gainCreators: { step: 8, title: 'Gain creators', text: 'How you create gains', ex: 'One fewer step, clean label' }
+      jobs: { step: 2, title: 'Jobs', text: 'Tasks, goals and needs', ex: 'Keep lines running' },
+      pains: { step: 3, title: 'Pains', text: 'Risks and obstacles', ex: 'Unplanned breakdowns' },
+      gains: { step: 4, title: 'Gains', text: 'Outcomes they want', ex: 'Fewer stops, audit-ready' },
+      products: { step: 6, title: 'Products and services', text: 'What you offer this segment', ex: 'Scheduling, technician app, sensor alerts' },
+      painRelievers: { step: 7, title: 'Pain relievers', text: 'How you remove pains', ex: 'Alerts before failure' },
+      gainCreators: { step: 8, title: 'Gain creators', text: 'How you create gains', ex: 'Planned repairs, instant audits' }
     },
     fit: { step: 9, label: 'Fit', ex: 'Fit' }
   },
@@ -99,5 +99,5 @@ Gaps and next interviews:`,
   sources: [
     'Alexander Osterwalder, Yves Pigneur, Gregory Bernarda and Alan Smith, Value Proposition Design, Wiley, 2014.'
   ],
-  related: ['obviously-awesome', 'ansoff-matrix', 'Jobs-to-be-Done', 'Empathy Map', 'Business Model Canvas']
+  related: ['obviously-awesome', 'jobs-to-be-done', 'five-rings', 'kano-model', 'messaging-house']
 };

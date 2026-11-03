@@ -1,7 +1,7 @@
 module.exports = {
   slug: 'obviously-awesome',
   name: 'Obviously Awesome',
-  company: 'arvena',
+  company: 'tessera',
   origin: 'April Dunford, 2019',
   oneLiner: 'A positioning method that starts from what customers would do without you, then works out what makes you different and who cares most.',
   question: 'In what context does our product make the most sense, so the right buyers see why it matters?',
@@ -14,34 +14,34 @@ module.exports = {
   steps: [
     { title: 'Competitive alternatives',
       text: 'Start with what customers would do if you did not exist. That includes doing nothing, using a spreadsheet or hiring someone, not only named competitors.',
-      example: 'Brands would use a gelatin capsule with a separate enteric coating step, or a coated tablet.' },
+      example: 'Plants would keep using spreadsheets and paper, add the maintenance module of their ERP, or buy an older desktop maintenance system.' },
     { title: 'Unique attributes',
       text: 'List the features and capabilities you have that those alternatives lack. Keep this factual.',
-      example: 'Acid resistance built into the capsule shell, with no coating step. Plant-based.' },
+      example: 'Set up in a day from an existing asset list, works offline on technicians’ phones, and warns before parts fail.' },
     { title: 'Value and proof',
       text: 'Translate each attribute into value for the customer, and back it with proof.',
-      example: 'One fewer manufacturing step and one fewer supplier. Proof: dissolution data at stomach pH and a lower cost per thousand capsules.' },
+      example: 'Fewer unplanned stops without an IT project. Proof: a pilot plant cut unplanned downtime by 18% in six months.' },
     { title: 'Best-fit customers',
       text: 'Identify who cares most about that value. Describe them by characteristics you can spot, not by demographics alone.',
-      example: 'Mid-size probiotic and enzyme brands that outsource encapsulation and already pay for coating.' },
+      example: 'Plants with 50 to 500 staff, several production lines and no dedicated maintenance IT team.' },
     { title: 'Market category',
       text: 'Choose the market frame that makes your value obvious to those customers. The category sets what they compare you with, what they expect to pay and which features they assume.',
-      example: 'Positioned as a delayed-release capsule, not a plant-based capsule, so buyers compare it with coating rather than with cheap shells.' },
+      example: 'Positioned as maintenance planning for mid-size plants, not as an enterprise asset management suite, so buyers compare it with spreadsheets, not with ERP projects.' },
     { title: 'Relevant trends',
       text: 'Optional. Add a trend only if it makes your value more urgent for these customers right now.',
-      example: 'Clean-label demand makes removing coating chemicals a selling point.' }
+      example: 'A shortage of skilled technicians makes every avoided emergency repair count.' }
   ],
   diagram: {
     type: 'chain',
     viewBox: '0 0 800 490',
     alt: 'Obviously Awesome: six positioning components worked out in order, from competitive alternatives to unique attributes, value, best-fit customers, market category and relevant trends.',
     nodes: [
-      { step: 1, title: 'Competitive alternatives', text: 'What customers would do if you did not exist.', ex: 'Gelatin capsule plus a coating step, or a coated tablet.' },
-      { step: 2, title: 'Unique attributes', text: 'What you have that the alternatives lack.', ex: 'Acid resistance in the shell. No coating. Plant-based.' },
-      { step: 3, title: 'Value and proof', text: 'What those attributes do for customers, with evidence.', ex: 'One fewer process step and supplier. Dissolution data.' },
-      { step: 4, title: 'Best-fit customers', text: 'Who cares most about that value.', ex: 'Mid-size probiotic brands that pay for coating today.' },
-      { step: 5, title: 'Market category', text: 'The frame that makes your value obvious.', ex: 'Delayed-release capsule, not plant-based capsule.' },
-      { step: 6, title: 'Relevant trends', text: 'Optional. Only if it adds urgency.', ex: 'Clean-label demand.', optional: true }
+      { step: 1, title: 'Competitive alternatives', text: 'What customers would do if you did not exist.', ex: 'Spreadsheets, ERP module, older desktop tools.' },
+      { step: 2, title: 'Unique attributes', text: 'What you have that the alternatives lack.', ex: 'Live in a day, offline app, failure alerts.' },
+      { step: 3, title: 'Value and proof', text: 'What those attributes do for customers, with evidence.', ex: 'Fewer stops, no IT project. 18% less downtime.' },
+      { step: 4, title: 'Best-fit customers', text: 'Who cares most about that value.', ex: 'Plants of 50–500 staff without maintenance IT.' },
+      { step: 5, title: 'Market category', text: 'The frame that makes your value obvious.', ex: 'Maintenance planning for mid-size plants.' },
+      { step: 6, title: 'Relevant trends', text: 'Optional. Only if it adds urgency.', ex: 'Technician shortage.', optional: true }
     ]
   },
   whenToUse: [
@@ -89,5 +89,5 @@ module.exports = {
     'April Dunford, Sales Pitch, Ambient Press, 2023.'
   ],
   note: 'The book runs this as a ten-step team exercise. The diagram shows the components in the order you work them out.',
-  related: ['value-proposition-canvas', 'crossing-the-chasm', 'Positioning Statement (Moore)', 'Messaging House', 'Strategic Narrative']
+  related: ['positioning-statement', 'value-proposition-canvas', 'crossing-the-chasm', 'messaging-house', 'category-design']
 };

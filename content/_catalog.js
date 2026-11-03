@@ -1,94 +1,103 @@
-// The full library map. Entries with a slug have a page in content/<slug>.js.
-// Plain strings are frameworks still to be drawn.
+// The library map: only practical product marketing tools.
+// Left out on purpose: psychology and persuasion models, generic management and planning tools,
+// product-development methods, pure copywriting formulas and brand theory.
+// Entries with a slug have a page in content/; `was` is the older name, so links using it still work.
 module.exports = [
   {
     name: 'Customer understanding',
     icon: 'customer',
     blurb: 'Who buys, what they are trying to get done, and what stands in their way.',
-    items: [{ slug: 'jobs-to-be-done', was: 'Jobs-to-be-Done' }, 'Outcome-Driven Innovation', 'Forces of Progress',
-      { slug: 'value-proposition-canvas' }, 'Empathy Map', '5 Rings of Buying Insight', 'Ideal Customer Profile',
-      'Buying committee map', { slug: 'kano-model' }, 'Customer journey map', 'Voice of the Customer',
-      'Win/loss analysis', 'Laddering (means-end chain)', 'Sean Ellis PMF test', 'Product-Market Fit Pyramid',
-      'Superhuman PMF engine', 'Smallest Viable Audience']
+    items: [
+      { slug: 'jobs-to-be-done', was: 'Jobs-to-be-Done' }, { slug: 'outcome-driven-innovation', was: 'Outcome-Driven Innovation' },
+      { slug: 'forces-of-progress', was: 'Forces of Progress' }, { slug: 'value-proposition-canvas' },
+      { slug: 'five-rings', was: '5 Rings of Buying Insight' }, { slug: 'ideal-customer-profile', was: 'Ideal Customer Profile' },
+      { slug: 'buying-committee-map', was: 'Buying committee map' }, { slug: 'kano-model' },
+      { slug: 'customer-journey-map', was: 'Customer journey map' }, { slug: 'voice-of-the-customer', was: 'Voice of the Customer' },
+      { slug: 'win-loss-analysis', was: 'Win/loss analysis' }, { slug: 'laddering', was: 'Laddering (means-end chain)' },
+      { slug: 'sean-ellis-test', was: 'Sean Ellis PMF test' }, { slug: 'net-promoter-score', was: 'NPS, CSAT and CES' }
+    ]
   },
   {
-    name: 'Market and competitive strategy',
+    name: 'Market and competitive analysis',
     icon: 'strategy',
-    blurb: 'Where to play, and how strong your position is there.',
-    items: [{ slug: 'swot', was: 'SWOT and TOWS' }, 'PESTLE', { slug: 'five-forces' }, 'Porter’s Generic Strategies', { slug: 'ansoff-matrix' },
-      { slug: 'bcg-matrix', was: 'BCG Growth-Share Matrix' }, 'GE–McKinsey Nine-Box', 'Three Horizons', 'Blue Ocean Strategy Canvas',
-      'Value Disciplines', '7 Powers', 'Playing to Win', 'Strategy Kernel', 'Wardley Mapping',
-      'Business Model Canvas', 'Lean Canvas', { slug: 'tam-sam-som', was: 'TAM, SAM, SOM' }, 'STP: segment, target, position',
-      'Perceptual map', 'Competitive intelligence cycle']
+    blurb: 'Where to compete, how attractive the market is, and how you compare.',
+    items: [
+      { slug: 'swot', was: 'SWOT and TOWS' }, { slug: 'pestle', was: 'PESTLE' }, { slug: 'five-forces' },
+      { slug: 'ansoff-matrix' }, { slug: 'bcg-matrix', was: 'BCG Growth-Share Matrix' },
+      { slug: 'strategy-canvas', was: 'Blue Ocean Strategy Canvas' }, { slug: 'tam-sam-som', was: 'TAM, SAM, SOM' },
+      { slug: 'stp', was: 'STP: segment, target, position' }, { slug: 'perceptual-map', was: 'Perceptual map' },
+      { slug: 'competitive-intelligence-cycle', was: 'Competitive intelligence cycle' }
+    ]
   },
   {
     name: 'Positioning',
     icon: 'positioning',
     blurb: 'The context that makes your product’s value obvious to the right buyer.',
-    items: [{ slug: 'obviously-awesome' }, { slug: 'positioning-statement', was: 'Positioning statement (Moore)' }, 'Positioning (Ries and Trout)',
-      'Onlyness statement', 'Category Design', { slug: 'whole-product', was: 'Whole Product' }, 'Five Product Levels',
-      { slug: 'crossing-the-chasm' }, 'Diffusion of Innovations']
+    items: [
+      { slug: 'obviously-awesome' }, { slug: 'positioning-statement', was: 'Positioning statement (Moore)' },
+      { slug: 'ries-trout-positioning', was: 'Positioning (Ries and Trout)' }, { slug: 'onlyness-statement', was: 'Onlyness statement' },
+      { slug: 'category-design', was: 'Category Design' }, { slug: 'whole-product', was: 'Whole Product' },
+      { slug: 'crossing-the-chasm' }, { slug: 'brand-architecture', was: 'Brand architecture' }
+    ]
   },
   {
     name: 'Messaging and storytelling',
     icon: 'messaging',
     blurb: 'Turning positioning into words that sales, web and campaigns can use.',
-    items: [{ slug: 'messaging-house' }, 'Message hierarchy', 'Strategic Narrative', 'Sales Pitch (Dunford)',
-      'StoryBrand SB7', { slug: 'golden-circle', was: 'Golden Circle' }, 'B2B Elements of Value', { slug: 'fab', was: 'Features, Advantages, Benefits' },
-      'Benefit ladder', 'Value proposition formula', 'Five Levels of Awareness', 'SUCCESs (Made to Stick)',
-      'AIDA', 'Problem, Agitate, Solve', 'Before, After, Bridge', '4Ps of copywriting', 'Why change, why now, why us']
-  },
-  {
-    name: 'Brand',
-    icon: 'brand',
-    blurb: 'What the company stands for, and how brand and demand work together.',
-    items: [{ slug: 'brand-pyramid', was: 'Brand Pyramid (CBBE)' }, 'Brand Identity Prism', 'Brand Key', 'Brand archetypes', 'Brand architecture',
-      'How Brands Grow', '95-5 Rule', 'Brand and activation balance']
+    items: [
+      { slug: 'messaging-house' }, { slug: 'message-hierarchy', was: 'Message hierarchy' },
+      { slug: 'strategic-narrative', was: 'Strategic Narrative' }, { slug: 'sales-pitch', was: 'Sales Pitch (Dunford)' },
+      { slug: 'storybrand', was: 'StoryBrand SB7' }, { slug: 'b2b-elements-of-value', was: 'B2B Elements of Value' },
+      { slug: 'fab', was: 'Features, Advantages, Benefits' }, { slug: 'benefit-ladder', was: 'Benefit ladder' },
+      { slug: 'value-proposition-formula', was: 'Value proposition formula' },
+      { slug: 'why-change-why-now-why-us', was: 'Why change, why now, why us' }
+    ]
   },
   {
     name: 'Pricing and packaging',
     icon: 'pricing',
     blurb: 'What to charge, how to package it, and what buyers will accept.',
-    items: [{ slug: 'van-westendorp' }, 'Gabor-Granger', 'Conjoint and MaxDiff', 'Economic Value to the Customer',
-      'Value-based pricing', 'Leaders, Fillers, Killers', { slug: 'good-better-best', was: 'Good, Better, Best' }, 'Value metric',
-      'Pricing model archetypes', 'Price waterfall', 'Decoy and anchoring']
+    items: [
+      { slug: 'van-westendorp' }, { slug: 'gabor-granger', was: 'Gabor-Granger' },
+      { slug: 'conjoint-maxdiff', was: 'Conjoint and MaxDiff' }, { slug: 'economic-value-to-customer', was: 'Economic Value to the Customer' },
+      { slug: 'value-based-pricing', was: 'Value-based pricing' }, { slug: 'leaders-fillers-killers', was: 'Leaders, Fillers, Killers' },
+      { slug: 'good-better-best', was: 'Good, Better, Best' }, { slug: 'value-metric', was: 'Value metric' },
+      { slug: 'pricing-models', was: 'Pricing model archetypes' }, { slug: 'price-waterfall', was: 'Price waterfall' }
+    ]
   },
   {
     name: 'Go-to-market and launch',
     icon: 'launch',
     blurb: 'Getting a product to market: motions, plans and launch mechanics.',
-    items: ['GTM canvas', { slug: 'launch-tiers', was: 'Launch tiers' }, 'T-minus launch plan', 'Beachhead market (24 steps)', 'Bowling alley',
-      'Marketing mix: 4Ps and 7Ps', '4Cs', 'SAVE', 'GTM motions', 'ABM tiers', 'Bullseye Framework',
-      { slug: 'product-lifecycle', was: 'Product lifecycle' }, 'Hype Cycle', 'Pragmatic Framework', 'Working Backwards PR/FAQ', 'RACI and DACI']
+    items: [
+      { slug: 'gtm-canvas', was: 'GTM canvas' }, { slug: 'launch-tiers', was: 'Launch tiers' },
+      { slug: 't-minus-launch-plan', was: 'T-minus launch plan' }, { slug: 'beachhead-market', was: 'Beachhead market (24 steps)' },
+      { slug: 'bowling-alley', was: 'Bowling alley' }, { slug: 'marketing-mix', was: 'Marketing mix: 4Ps and 7Ps' },
+      { slug: 'save-framework', was: 'SAVE' }, { slug: 'gtm-motions', was: 'GTM motions' },
+      { slug: 'abm-tiers', was: 'ABM tiers' }, { slug: 'product-lifecycle', was: 'Product lifecycle' },
+      { slug: 'pr-faq', was: 'Working Backwards PR/FAQ' }, { slug: 'peso-model', was: 'PESO model' }
+    ]
   },
   {
     name: 'Sales enablement',
     icon: 'sales',
     blurb: 'Helping sales qualify, sell value and handle objections.',
-    items: ['Battlecard', { slug: 'meddic', was: 'MEDDIC and MEDDPICC' }, 'BANT', 'CHAMP', { slug: 'spin-selling', was: 'SPIN Selling' }, 'Challenger Sale',
-      'Command of the Message', 'Solution Selling', 'Sandler', 'Value Selling', 'Gartner B2B buying jobs',
-      'Feel, Felt, Found', 'LAER', 'Content-to-stage map', 'Kirkpatrick Model']
+    items: [
+      { slug: 'battlecard', was: 'Battlecard' }, { slug: 'meddic', was: 'MEDDIC and MEDDPICC' },
+      { slug: 'bant', was: 'BANT' }, { slug: 'spin-selling', was: 'SPIN Selling' },
+      { slug: 'challenger-sale', was: 'Challenger Sale' }, { slug: 'command-of-the-message', was: 'Command of the Message' },
+      { slug: 'solution-selling', was: 'Solution Selling' }, { slug: 'value-selling', was: 'Value Selling' },
+      { slug: 'gartner-buying-jobs', was: 'Gartner B2B buying jobs' }, { slug: 'laer', was: 'LAER' },
+      { slug: 'content-to-stage-map', was: 'Content-to-stage map' }, { slug: 'kirkpatrick-model', was: 'Kirkpatrick Model' }
+    ]
   },
   {
-    name: 'Growth and lifecycle',
+    name: 'Adoption and growth',
     icon: 'growth',
-    blurb: 'How customers move from first contact to loyal advocate, and how to measure it.',
-    items: [{ slug: 'aarrr' }, { slug: 'flywheel' }, 'TOFU, MOFU, BOFU', { slug: 'see-think-do-care', was: 'See, Think, Do, Care' }, 'Bow-tie model',
-      'Demand waterfall', 'Growth loops', 'Customer Value Journey', 'Consumer Decision Journey', 'The Messy Middle',
-      { slug: 'hook-model', was: 'Hook Model' }, 'Fogg Behavior Model', 'North Star Metric', 'HEART', 'NPS, CSAT and CES']
-  },
-  {
-    name: 'Content and channels',
-    icon: 'content',
-    blurb: 'Planning content and choosing where it runs.',
-    items: [{ slug: 'hub-hero-hygiene', was: 'Hub, Hero, Hygiene' }, 'Topic clusters', 'They Ask, You Answer', { slug: 'peso-model', was: 'PESO model' }, 'COPE',
-      'Content marketing matrix', 'Content atomization']
-  },
-  {
-    name: 'Planning and prioritization',
-    icon: 'planning',
-    blurb: 'Setting goals, choosing what to do first and measuring the result.',
-    items: ['SOSTAC', 'RACE', 'OKRs', 'SMART goals', { slug: 'rice', was: 'RICE and ICE' }, 'MoSCoW', { slug: 'opportunity-solution-tree', was: 'Opportunity Solution Tree' },
-      'Build, Measure, Learn', 'Double Diamond', 'Stage-Gate', 'Attribution models']
+    blurb: 'Measuring how customers move from first contact to loyal, growing accounts.',
+    items: [
+      { slug: 'aarrr' }, { slug: 'flywheel' }, { slug: 'bow-tie', was: 'Bow-tie model' },
+      { slug: 'tofu-mofu-bofu', was: 'TOFU, MOFU, BOFU' }
+    ]
   }
 ];

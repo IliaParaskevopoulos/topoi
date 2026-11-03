@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sean Ellis Test — Topoi</title>
+<meta name="description" content="One survey question that shows whether a product has product-market fit: how would you feel if you could no longer use it?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-customer-understanding"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Customer understanding</a></p>
+    <h1>Sean Ellis Test</h1>
+    <p class="lede">One survey question that shows whether a product has product-market fit: how would you feel if you could no longer use it?</p>
+    <p class="origin">Sean Ellis, around 2009</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Sean Ellis Test">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Kontor</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Very disappointed</span></button>
+        <p class="gen">Ask active users: “How would you feel if you could no longer use the product?” The key answer is “very disappointed”.</p><p class="ex">44% of Kontor’s active users say very disappointed.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Somewhat disappointed</span></button>
+        <p class="gen">These users like the product but could live without it. Learn what would make it essential for them.</p><p class="ex">36% say somewhat disappointed.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Not disappointed</span></button>
+        <p class="gen">These users do not depend on you. They are often outside your best-fit segment.</p><p class="ex">20% say not disappointed, mostly very small businesses.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Check the 40% line</span></button>
+        <p class="gen">Ellis found that products with 40% or more “very disappointed” tend to grow well. Then study who those users are and what they value most.</p><p class="ex">Above the line. The “very disappointed” group is mostly construction subcontractors, so Kontor focuses there.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Do enough of our users depend on the product to show product-market fit?</p></section>
+      <section><h2>When to use it</h2><ul><li>Before investing heavily in growth marketing.</li><li>Finding the segment that values the product most.</li><li>Tracking fit over time after major changes.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>With users who have barely tried the product. Survey people who used it recently and more than once.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Survey active users who used the product at least twice recently.</li><li>Ask the main question plus: what is the main benefit, and who would benefit most?</li><li>Calculate the share who answer “very disappointed”.</li><li>Profile that group and focus positioning and targeting on them.</li></ol></section>
+      <section><h2>Worked example: Kontor</h2>
+        <p>Kontor is a fictional fintech that lets small businesses get paid early on their invoices.</p>
+        <dl class="example-list"><dt>Very disappointed</dt><dd>44% of Kontor’s active users say very disappointed.</dd><dt>Somewhat disappointed</dt><dd>36% say somewhat disappointed.</dd><dt>Not disappointed</dt><dd>20% say not disappointed, mostly very small businesses.</dd><dt>Check the 40% line</dt><dd>Above the line. The “very disappointed” group is mostly construction subcontractors, so Kontor focuses there.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Surveying all sign-ups, including people who never really used it.</li><li>Treating 40% as a law rather than a benchmark.</li><li>Ignoring the follow-up questions, which hold the useful detail.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>PRODUCT-MARKET FIT SURVEY — [Product]
+
+How would you feel if you could no longer use [product]?
+  Very disappointed / Somewhat disappointed / Not disappointed
+What is the main benefit you get from [product]?
+What type of person would benefit most from [product]?
+
+Very disappointed:   %   Who they are:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Sean Ellis and Morgan Brown, Hacking Growth, Currency, 2017.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="aarrr.html">AARRR Pirate Metrics</a></li><li><a href="ideal-customer-profile.html">Ideal Customer Profile</a></li><li><a href="net-promoter-score.html">Net Promoter Score</a></li><li><a href="crossing-the-chasm.html">Crossing the Chasm</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Checking product-market fit and finding the segment that loves you</dd><dt>You need</dt><dd>At least 40 active users to survey</dd><dt>You get</dt><dd>A fit score and the profile of your most committed users</dd><dt>Time</dt><dd>One week</dd><dt>Example company</dt><dd>Kontor, fintech</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":4,"diagram":{"type":"tiers","viewBox":"0 0 800 450","alt":"Sean Ellis test: shares of users who would be very disappointed, somewhat disappointed and not disappointed, with the 40% threshold.","tiers":[{"step":1,"height":360,"title":"Very","sub":"disappointed","subEx":"44%","items":"• Depend on it\n• Your core users","itemsEx":"• Mostly construction\n  subcontractors"},{"step":2,"height":280,"title":"Somewhat","sub":"disappointed","subEx":"36%","items":"• Like it\n• Could switch","itemsEx":"• Mixed segments"},{"step":3,"height":170,"title":"Not","sub":"disappointed","subEx":"20%","items":"• Do not need it","itemsEx":"• Very small firms"}],"note":{"step":4,"at":0,"label":"40% or more: strong fit","ex":"44%: above the line"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

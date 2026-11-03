@@ -1,6 +1,6 @@
 # Topoi
 
-Product marketing frameworks, drawn one step at a time. Each framework has an animated diagram you can play, pause and step through, a worked B2B example from a fictional company, and a template you can copy.
+Product marketing frameworks, drawn one step at a time. 80 practical frameworks in 8 categories, each with an animated diagram you can play, pause and step through, a worked B2B example from a fictional company, and a template you can copy.
 
 Live site: https://iliaparaskevopoulos.github.io/topoi/
 

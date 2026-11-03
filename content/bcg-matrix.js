@@ -1,7 +1,7 @@
 module.exports = {
   slug: 'bcg-matrix',
   name: 'BCG Growth-Share Matrix',
-  company: 'arvena',
+  company: 'tessera',
   origin: 'Bruce Henderson, Boston Consulting Group, 1970',
   oneLiner: 'Sort products by market growth and market share, to decide where to invest and where to take cash out.',
   question: 'Which products should we invest in, which should fund the others, and which should we let go?',
@@ -12,12 +12,12 @@ module.exports = {
     'Time': 'Two hours with data in hand'
   },
   steps: [
-    { title: 'Set the axes', text: 'Left to right: relative market share, high on the left by convention. Bottom to top: market growth.', example: 'Arvena places its four capsule lines on the grid.' },
-    { title: 'Stars', text: 'High share in a fast-growing market. They lead but need investment to keep up with growth.', example: 'Printed and coloured capsules for premium brands.' },
-    { title: 'Question marks', text: 'Low share in a fast-growing market. They could become stars, or drain cash. Invest selectively or exit.', example: 'The new acid-resistant capsule.' },
-    { title: 'Cash cows', text: 'High share in a slow-growing market. They need little investment and generate cash.', example: 'The standard plant-based capsule.' },
-    { title: 'Dogs', text: 'Low share in a slow-growing market. Keep only if they serve a purpose; otherwise harvest or exit.', example: 'The first-generation shell with slower dissolution.' },
-    { title: 'Move the cash', text: 'Use cash from cash cows to fund the question marks most likely to become stars. Stars become cash cows as their market slows.', example: 'Cash from the standard capsule funds the acid-resistant launch.' }
+    { title: 'Set the axes', text: 'Left to right: relative market share, high on the left by convention. Bottom to top: market growth.', example: 'Tessera places its four products on the grid.' },
+    { title: 'Stars', text: 'High share in a fast-growing market. They lead but need investment to keep up with growth.', example: 'The technician mobile app.' },
+    { title: 'Question marks', text: 'Low share in a fast-growing market. They could become stars, or drain cash. Invest selectively or exit.', example: 'Tessera Predict, the failure-prediction module.' },
+    { title: 'Cash cows', text: 'High share in a slow-growing market. They need little investment and generate cash.', example: 'Core maintenance scheduling.' },
+    { title: 'Dogs', text: 'Low share in a slow-growing market. Keep only if they serve a purpose; otherwise harvest or exit.', example: 'The on-premise edition.' },
+    { title: 'Move the cash', text: 'Use cash from cash cows to fund the question marks most likely to become stars. Stars become cash cows as their market slows.', example: 'Cash from core scheduling funds the Predict launch.' }
   ],
   diagram: {
     type: 'matrix', viewBox: '0 0 800 500',
@@ -26,10 +26,10 @@ module.exports = {
     x: { title: 'Relative market share', low: 'High', high: 'Low' },
     y: { title: 'Market growth', low: 'Low', high: 'High' },
     quadrants: [
-      { pos: 'tl', step: 2, title: 'Stars', text: 'Lead a growing market. Need investment.', ex: 'Printed capsules for premium brands.', risk: 'Invest', riskEx: 'Invest' },
-      { pos: 'tr', step: 3, title: 'Question marks', text: 'Small share of a growing market.', ex: 'Acid-resistant capsule.', risk: 'Invest or exit', riskEx: 'Fund the launch' },
-      { pos: 'bl', step: 4, title: 'Cash cows', text: 'Lead a slow market. Generate cash.', ex: 'Standard plant-based capsule.', risk: 'Harvest', riskEx: 'Fund others' },
-      { pos: 'br', step: 5, title: 'Dogs', text: 'Small share of a slow market.', ex: 'First-generation shell.', risk: 'Divest', riskEx: 'Phase out' }
+      { pos: 'tl', step: 2, title: 'Stars', text: 'Lead a growing market. Need investment.', ex: 'Technician mobile app.', risk: 'Invest', riskEx: 'Invest' },
+      { pos: 'tr', step: 3, title: 'Question marks', text: 'Small share of a growing market.', ex: 'Predict module.', risk: 'Invest or exit', riskEx: 'Fund the launch' },
+      { pos: 'bl', step: 4, title: 'Cash cows', text: 'Lead a slow market. Generate cash.', ex: 'Core scheduling.', risk: 'Harvest', riskEx: 'Fund others' },
+      { pos: 'br', step: 5, title: 'Dogs', text: 'Small share of a slow market.', ex: 'On-premise edition.', risk: 'Divest', riskEx: 'Phase out' }
     ],
     risk: { step: 6 }
   },
