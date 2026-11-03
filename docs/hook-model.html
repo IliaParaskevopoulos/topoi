@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hook Model — Topoi</title>
+<meta name="description" content="Four steps that, repeated, turn using a product into a habit: trigger, action, variable reward, investment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-growth-and-lifecycle"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-14.3 4.9"/><path d="M4 12a8 8 0 0 1 14.3-4.9"/><path d="M18.6 3v4.3h-4.3M5.4 21v-4.3h4.3"/></svg>Growth and lifecycle</a></p>
+    <h1>Hook Model</h1>
+    <p class="lede">Four steps that, repeated, turn using a product into a habit: trigger, action, variable reward, investment.</p>
+    <p class="origin">Nir Eyal, 2014</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Hook Model">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Nordhaus Home</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Trigger</span></button>
+        <p class="gen">What prompts the behaviour. External triggers are messages and reminders; internal triggers are feelings or routines.</p><p class="ex">A message about a storage workshop this Saturday, or the feeling that the flat is cluttered.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Action</span></button>
+        <p class="gen">The simplest thing the user does in expectation of a reward. The easier it is, the more likely it happens.</p><p class="ex">Open the app and save a room idea.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Variable reward</span></button>
+        <p class="gen">A reward that changes each time, which keeps interest. It can be social, material or personal.</p><p class="ex">New room ideas each week, and member prices that change.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Investment</span></button>
+        <p class="gen">The user puts something in, such as data, content or effort, that makes the product better for them and loads the next trigger.</p><p class="ex">Uploading room sizes and a photo, so the next suggestions fit.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">A habit forms</span></button>
+        <p class="gen">After enough loops, the internal trigger alone brings the user back. Measure how often users return without a prompt.</p><p class="ex">Members open the app weekly whenever they plan a change at home.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">What brings customers back to our product without us having to ask every time?</p></section>
+      <section><h2>When to use it</h2><ul><li>Designing digital products, apps or programmes meant for repeated use.</li><li>Usage drops after sign-up and you need to know where the loop breaks.</li><li>Planning lifecycle messages that lead to a habit, not just a click.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Products used rarely by nature, such as annual purchases.</li><li>Any design that exploits users against their interest. Eyal himself warns against it.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Identify the internal trigger: the feeling or moment when users need you.</li><li>Make the first action as simple as possible.</li><li>Design a reward that varies and is worth coming back for.</li><li>Ask for a small investment that improves the next visit.</li><li>Measure loop by loop: trigger response, action rate, return without prompt.</li></ol></section>
+      <section><h2>Worked example: Nordhaus Home</h2>
+        <p>Nordhaus Home is a fictional chain of 35 home-goods stores.</p>
+        <dl class="example-list"><dt>Trigger</dt><dd>A message about a storage workshop this Saturday, or the feeling that the flat is cluttered.</dd><dt>Action</dt><dd>Open the app and save a room idea.</dd><dt>Variable reward</dt><dd>New room ideas each week, and member prices that change.</dd><dt>Investment</dt><dd>Uploading room sizes and a photo, so the next suggestions fit.</dd><dt>A habit forms</dt><dd>Members open the app weekly whenever they plan a change at home.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Relying on push messages forever instead of earning an internal trigger.</li><li>Rewards that never change.</li><li>Building habits that do not serve the user, which damages trust and invites regulation.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>HOOK MODEL — [Product]
+
+Internal trigger (feeling or moment):
+External trigger:
+Action (simplest step):
+Variable reward:
+Investment (what the user puts in):
+
+Metric for each step:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Nir Eyal with Ryan Hoover, Hooked: How to Build Habit-Forming Products, Portfolio, 2014.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="flywheel.html">Flywheel</a></li><li><a href="aarrr.html">AARRR Pirate Metrics</a></li><li><span>Fogg Behavior Model, coming soon</span></li><li><span>Growth loops, coming soon</span></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Designing apps, loyalty programmes and digital services people return to</dd><dt>You need</dt><dd>A view of the moment customers need you, and usage data</dd><dt>You get</dt><dd>A loop to design and measure, step by step</dd><dt>Time</dt><dd>A design workshop, then testing</dd><dt>Example company</dt><dd>Nordhaus Home, retail</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"cycle","viewBox":"0 0 800 470","alt":"Hook Model: a loop of trigger, action, variable reward and investment around a habit at the centre.","center":{"step":5,"title":"Habit","text":"Users return without a prompt","ex":"Weekly app use"},"segments":[{"step":1,"title":"Trigger","text":"A prompt: a message, or a feeling","ex":"Workshop message; a cluttered flat"},{"step":2,"title":"Action","text":"The simplest step towards a reward","ex":"Open the app, save a room idea"},{"step":3,"title":"Reward","text":"Variable: different each time","ex":"New ideas weekly, changing member prices"},{"step":4,"title":"Investment","text":"The user puts something in","ex":"Room sizes and a photo"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPIN Selling — Topoi</title>
+<meta name="description" content="Four kinds of question that move a buyer from describing their situation to stating the value of a solution.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-sales-enablement"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V4.5h6V7M3 13h18M11 13v2h2v-2"/></svg>Sales enablement</a></p>
+    <h1>SPIN Selling</h1>
+    <p class="lede">Four kinds of question that move a buyer from describing their situation to stating the value of a solution.</p>
+    <p class="origin">Neil Rackham, 1988</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the SPIN Selling">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Lumora Diagnostics</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Situation</span></button>
+        <p class="gen">Questions about facts and context. Necessary, but keep them few: buyers tire of them.</p><p class="ex">How do you test for infections today, and how long do results take?</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Problem</span></button>
+        <p class="gen">Questions about difficulties and dissatisfaction with the current way.</p><p class="ex">How often do you prescribe antibiotics while waiting for a result?</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Implication</span></button>
+        <p class="gen">Questions about the consequences of the problem, which make it bigger and more urgent.</p><p class="ex">What do unnecessary prescriptions cost you in follow-up visits and patient trust?</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Need-payoff</span></button>
+        <p class="gen">Questions that get the buyer to state the value of solving it, in their own words.</p><p class="ex">If you had a result within ten minutes, how would that change your consultations?</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Spend time where it counts</span></button>
+        <p class="gen">Rackham’s research found that successful sellers ask more implication and need-payoff questions, and fewer situation questions.</p><p class="ex">Lumora’s call guide has two situation questions, then most time on implications and payoff.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">What should sellers ask so the customer sees the size of the problem and the value of solving it?</p></section>
+      <section><h2>When to use it</h2><ul><li>Larger B2B sales where the buyer must justify a change.</li><li>Building discovery guides with sales.</li><li>Training new sellers.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Small, quick purchases where long questioning slows the sale.</li><li>As a script read word for word.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>List the problems your product solves for each buyer role.</li><li>For each problem, write implication questions about cost, risk and time.</li><li>Write need-payoff questions that let the buyer state the value.</li><li>Keep situation questions few; research the rest before the call.</li><li>Practise in role-play and listen to recorded calls.</li></ol></section>
+      <section><h2>Worked example: Lumora Diagnostics</h2>
+        <p>Lumora Diagnostics is a fictional company that makes a rapid blood-test reader for GP clinics.</p>
+        <dl class="example-list"><dt>Situation</dt><dd>How do you test for infections today, and how long do results take?</dd><dt>Problem</dt><dd>How often do you prescribe antibiotics while waiting for a result?</dd><dt>Implication</dt><dd>What do unnecessary prescriptions cost you in follow-up visits and patient trust?</dd><dt>Need-payoff</dt><dd>If you had a result within ten minutes, how would that change your consultations?</dd><dt>Spend time where it counts</dt><dd>Lumora’s call guide has two situation questions, then most time on implications and payoff.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Too many situation questions, which bore the buyer.</li><li>Jumping to the pitch before the buyer feels the implication.</li><li>Implication questions that sound like manipulation. Stay genuine.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>SPIN QUESTION GUIDE — [Product], [buyer role]
+
+Situation (2–3, only what you cannot research):
+Problem:
+Implication:
+Need-payoff:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Neil Rackham, SPIN Selling, McGraw-Hill, 1988.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="meddic.html">MEDDIC</a></li><li><a href="fab.html">Features, Advantages, Benefits</a></li><li><span>Challenger Sale, coming soon</span></li><li><span>Solution Selling, coming soon</span></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Discovery calls in larger B2B sales</dd><dt>You need</dt><dd>A clear view of the problems your product solves, per buyer role</dd><dt>You get</dt><dd>A question guide that builds the case for change with the customer</dd><dt>Time</dt><dd>A day to build the guide, then practice</dd><dt>Example company</dt><dd>Lumora Diagnostics, diagnostics</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"acronym","viewBox":"0 0 800 300","alt":"SPIN questions: situation, problem, implication and need-payoff, with how much time to spend on each.","items":[{"step":1,"letter":"S","title":"Situation","text":"Facts and context","ex":"How do you test for infections today?","status":"Few","statusEx":"Ask 2"},{"step":2,"letter":"P","title":"Problem","text":"Difficulties with the current way","ex":"How often do you prescribe while waiting?","status":"Some","statusEx":"Ask 3"},{"step":3,"letter":"I","title":"Implication","text":"Consequences that make the problem bigger","ex":"What do unnecessary prescriptions cost you?","status":"Most time","statusEx":"Most time"},{"step":4,"letter":"N","title":"Need-payoff","text":"The value of solving it, in their words","ex":"What would a ten-minute result change?","status":"Most time","statusEx":"Most time"}],"score":{"step":5}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

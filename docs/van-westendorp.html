@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Van Westendorp Price Sensitivity Meter — Topoi</title>
+<meta name="description" content="Four questions about price that show the range buyers find acceptable, and where in that range to aim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-pricing-and-packaging"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V3h9l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>Pricing and packaging</a></p>
+    <h1>Van Westendorp Price Sensitivity Meter</h1>
+    <p class="lede">Four questions about price that show the range buyers find acceptable, and where in that range to aim.</p>
+    <p class="origin">Peter van Westendorp, 1976</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Van Westendorp Price Sensitivity Meter">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Orto Foods</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Ask four questions</span></button>
+        <p class="gen">Show buyers the product and ask: at what price is it so cheap you would doubt the quality? A bargain? Getting expensive, but still worth considering? Too expensive to consider?</p><p class="ex">Orto asks 400 shoppers about a new 400 g chilled lasagne.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Too cheap</span></button>
+        <p class="gen">For each price, plot the share of buyers who find it too cheap. The curve falls as price rises.</p><p class="ex">Below about CHF 5.60, most shoppers start to doubt the quality.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Bargain</span></button>
+        <p class="gen">Plot the share who see each price as a bargain. This curve also falls as price rises.</p><p class="ex">At about CHF 7.60, half the shoppers still see it as a bargain.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Getting expensive</span></button>
+        <p class="gen">Plot the share who find each price expensive but would still consider buying. This curve rises with price.</p><p class="ex">At CHF 9, half the shoppers find it getting expensive.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Too expensive</span></button>
+        <p class="gen">Plot the share who would not consider buying at each price.</p><p class="ex">Above CHF 11, most shoppers would not consider it.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Acceptable range</span></button>
+        <p class="gen">The range runs from where “too cheap” crosses “getting expensive” to where “too expensive” crosses “bargain”. Some practitioners use inverted “not a bargain” and “not expensive” curves instead; the idea is the same.</p><p class="ex">Orto’s acceptable range is CHF 7.00 to CHF 9.20.</p></li>
+      <li><button type="button"><span class="n">7</span><span class="t">Optimal and indifference points</span></button>
+        <p class="gen">Where “too cheap” meets “too expensive” is the optimal price point: the fewest buyers reject the price. Where “bargain” meets “getting expensive” is the indifference point.</p><p class="ex">Optimal at CHF 7.70, indifference at CHF 8.30. Orto launches at CHF 7.90, between the two, and keeps promotions above CHF 7.00.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">What price range will buyers accept for this product, and where in that range should we set the price?</p></section>
+      <section><h2>When to use it</h2><ul><li>Pricing a new product, pack size or variant in a category where buyers know roughly what things cost.</li><li>Checking whether a planned price sits inside what buyers will accept.</li><li>Getting a quick, low-cost read before a more detailed study.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Brand-new categories where buyers have no reference price. Answers will be guesses.</li><li>Large B2B deals with negotiated, value-based prices.</li><li>Predicting volume or revenue. Combine it with Gabor-Granger or conjoint analysis for that.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Recruit buyers from the target segment and show them a realistic description of the product.</li><li>Ask the four questions in order: too expensive, expensive, bargain, too cheap. Let them answer in open price amounts.</li><li>For each price point, calculate the cumulative share for each question.</li><li>Plot the four curves and find the intersections.</li><li>Set the price inside the acceptable range, using the optimal and indifference points and your costs as guides.</li></ol></section>
+      <section><h2>Worked example: Orto Foods</h2>
+        <p>Orto Foods is a fictional maker of chilled ready meals sold through Swiss supermarkets.</p>
+        <dl class="example-list"><dt>Ask four questions</dt><dd>Orto asks 400 shoppers about a new 400 g chilled lasagne.</dd><dt>Too cheap</dt><dd>Below about CHF 5.60, most shoppers start to doubt the quality.</dd><dt>Bargain</dt><dd>At about CHF 7.60, half the shoppers still see it as a bargain.</dd><dt>Getting expensive</dt><dd>At CHF 9, half the shoppers find it getting expensive.</dd><dt>Too expensive</dt><dd>Above CHF 11, most shoppers would not consider it.</dd><dt>Acceptable range</dt><dd>Orto’s acceptable range is CHF 7.00 to CHF 9.20.</dd><dt>Optimal and indifference points</dt><dd>Optimal at CHF 7.70, indifference at CHF 8.30. Orto launches at CHF 7.90, between the two, and keeps promotions above CHF 7.00.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Asking people who do not buy in the category. Their answers are not anchored in reality.</li><li>Reading the optimal price point as the profit-maximising price. It is the price fewest people reject, nothing more.</li><li>Ignoring the competitive shelf. Buyers will compare your price with the products next to it.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>VAN WESTENDORP SURVEY — [Product], [segment]
+
+Product description shown:
+
+1. At what price would you consider this product so expensive that you would not consider buying it?
+2. At what price would you consider it expensive, but still consider buying it?
+3. At what price would you consider it a bargain, a great buy for the money?
+4. At what price would it be so cheap that you would doubt its quality?
+
+Results
+  Acceptable range:        from        to
+  Optimal price point:
+  Indifference price point:
+  Decision:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Peter H. van Westendorp, “NSS Price Sensitivity Meter: A New Approach to Study Consumer Perception of Prices”, ESOMAR Congress, Venice, 1976.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="kano-model.html">Kano Model</a></li><li><span>Gabor-Granger, coming soon</span></li><li><span>Conjoint and MaxDiff, coming soon</span></li><li><span>Value-based pricing, coming soon</span></li><li><a href="good-better-best.html">Good, Better, Best</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Setting a price range for a new product or a new pack</dd><dt>You need</dt><dd>A survey of at least 150 to 200 target buyers who understand the product</dd><dt>You get</dt><dd>An acceptable price range, plus optimal and indifference price points</dd><dt>Time</dt><dd>Two to three weeks including fieldwork</dd><dt>Example company</dt><dd>Orto Foods, processed food</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":7,"diagram":{"type":"chart","viewBox":"0 0 800 450","left":90,"alt":"Van Westendorp chart: four cumulative curves for too cheap, bargain, getting expensive and too expensive, with the acceptable price range and the optimal and indifference price points marked.","axesStep":1,"x":{"domain":[4,14],"title":"Price","ticks":[{"v":4,"gen":"","ex":"CHF 4"},{"v":6,"gen":"","ex":"CHF 6"},{"v":8,"gen":"","ex":"CHF 8"},{"v":10,"gen":"","ex":"CHF 10"},{"v":12,"gen":"","ex":"CHF 12"},{"v":14,"gen":"","ex":"CHF 14"}]},"y":{"domain":[0,100],"title":"Share of buyers","ticks":[{"v":0,"gen":"0%","ex":"0%"},{"v":25,"gen":"25%","ex":"25%"},{"v":50,"gen":"50%","ex":"50%"},{"v":75,"gen":"75%","ex":"75%"},{"v":100,"gen":"100%","ex":"100%"}]},"bands":[{"step":6,"x0":6.962499999999937,"x1":9.1875000000001,"label":"Acceptable range","ex":"CHF 7.00 to CHF 9.20"}],"curves":[{"step":2,"points":[[4,93.5],[4.1,92.41],[4.2,91.16],[4.3,89.72],[4.4,88.08],[4.5,86.22],[4.6,84.11],[4.7,81.76],[4.8,79.14],[4.9,76.25],[5,73.11],[5.1,69.71],[5.2,66.08],[5.3,62.25],[5.4,58.26],[5.5,54.16],[5.6,50],[5.7,45.84],[5.8,41.74],[5.9,37.75],[6,33.92],[6.1,30.29],[6.2,26.89],[6.3,23.75],[6.4,20.86],[6.5,18.24],[6.6,15.89],[6.7,13.78],[6.8,11.92],[6.9,10.28],[7,8.84],[7.1,7.59],[7.2,6.5],[7.3,5.55],[7.4,4.74],[7.5,4.04],[7.6,3.44],[7.7,2.93],[7.8,2.49],[7.9,2.12],[8,1.8],[8.1,1.53],[8.2,1.3],[8.3,1.1],[8.4,0.93],[8.5,0.79],[8.6,0.67],[8.7,0.57],[8.8,0.48],[8.9,0.41],[9,0.34],[9.1,0.29],[9.2,0.25],[9.3,0.21],[9.4,0.18],[9.5,0.15],[9.6,0.13],[9.7,0.11],[9.8,0.09],[9.9,0.08],[10,0.07],[10.1,0.06],[10.2,0.05],[10.3,0.04],[10.4,0.03],[10.5,0.03],[10.6,0.02],[10.7,0.02],[10.8,0.02],[10.9,0.01],[11,0.01],[11.1,0.01],[11.2,0.01],[11.3,0.01],[11.4,0.01],[11.5,0.01],[11.6,0],[11.7,0],[11.8,0],[11.9,0],[12,0],[12.1,0],[12.2,0],[12.3,0],[12.4,0],[12.5,0],[12.6,0],[12.7,0],[12.8,0],[12.9,0],[13,0],[13.1,0],[13.2,0],[13.3,0],[13.4,0],[13.5,0],[13.6,0],[13.7,0],[13.8,0],[13.9,0],[14,0]],"label":"Too cheap","labelAt":[4.25,99]},{"step":3,"points":[[4,98.2],[4.1,97.99],[4.2,97.76],[4.3,97.51],[4.4,97.22],[4.5,96.91],[4.6,96.56],[4.7,96.17],[4.8,95.73],[4.9,95.26],[5,94.73],[5.1,94.15],[5.2,93.5],[5.3,92.79],[5.4,92.02],[5.5,91.16],[5.6,90.22],[5.7,89.2],[5.8,88.08],[5.9,86.86],[6,85.54],[6.1,84.11],[6.2,82.57],[6.3,80.91],[6.4,79.14],[6.5,77.25],[6.6,75.23],[6.7,73.11],[6.8,70.87],[6.9,68.52],[7,66.08],[7.1,63.54],[7.2,60.93],[7.3,58.26],[7.4,55.53],[7.5,52.77],[7.6,50],[7.7,47.23],[7.8,44.47],[7.9,41.74],[8,39.07],[8.1,36.46],[8.2,33.92],[8.3,31.48],[8.4,29.13],[8.5,26.89],[8.6,24.77],[8.7,22.75],[8.8,20.86],[8.9,19.09],[9,17.43],[9.1,15.89],[9.2,14.46],[9.3,13.14],[9.4,11.92],[9.5,10.8],[9.6,9.78],[9.7,8.84],[9.8,7.98],[9.9,7.21],[10,6.5],[10.1,5.85],[10.2,5.27],[10.3,4.74],[10.4,4.27],[10.5,3.83],[10.6,3.44],[10.7,3.09],[10.8,2.78],[10.9,2.49],[11,2.24],[11.1,2.01],[11.2,1.8],[11.3,1.61],[11.4,1.45],[11.5,1.3],[11.6,1.16],[11.7,1.04],[11.8,0.93],[11.9,0.83],[12,0.75],[12.1,0.67],[12.2,0.6],[12.3,0.54],[12.4,0.48],[12.5,0.43],[12.6,0.39],[12.7,0.34],[12.8,0.31],[12.9,0.28],[13,0.25],[13.1,0.22],[13.2,0.2],[13.3,0.18],[13.4,0.16],[13.5,0.14],[13.6,0.13],[13.7,0.11],[13.8,0.1],[13.9,0.09],[14,0.08]],"label":"Bargain","labelAt":[6.25,84]},{"step":4,"points":[[4,0.39],[4.1,0.43],[4.2,0.48],[4.3,0.54],[4.4,0.6],[4.5,0.67],[4.6,0.75],[4.7,0.83],[4.8,0.93],[4.9,1.04],[5,1.16],[5.1,1.3],[5.2,1.45],[5.3,1.61],[5.4,1.8],[5.5,2.01],[5.6,2.24],[5.7,2.49],[5.8,2.78],[5.9,3.09],[6,3.44],[6.1,3.83],[6.2,4.27],[6.3,4.74],[6.4,5.27],[6.5,5.85],[6.6,6.5],[6.7,7.21],[6.8,7.98],[6.9,8.84],[7,9.78],[7.1,10.8],[7.2,11.92],[7.3,13.14],[7.4,14.46],[7.5,15.89],[7.6,17.43],[7.7,19.09],[7.8,20.86],[7.9,22.75],[8,24.77],[8.1,26.89],[8.2,29.13],[8.3,31.48],[8.4,33.92],[8.5,36.46],[8.6,39.07],[8.7,41.74],[8.8,44.47],[8.9,47.23],[9,50],[9.1,52.77],[9.2,55.53],[9.3,58.26],[9.4,60.93],[9.5,63.54],[9.6,66.08],[9.7,68.52],[9.8,70.87],[9.9,73.11],[10,75.23],[10.1,77.25],[10.2,79.14],[10.3,80.91],[10.4,82.57],[10.5,84.11],[10.6,85.54],[10.7,86.86],[10.8,88.08],[10.9,89.2],[11,90.22],[11.1,91.16],[11.2,92.02],[11.3,92.79],[11.4,93.5],[11.5,94.15],[11.6,94.73],[11.7,95.26],[11.8,95.73],[11.9,96.17],[12,96.56],[12.1,96.91],[12.2,97.22],[12.3,97.51],[12.4,97.76],[12.5,97.99],[12.6,98.2],[12.7,98.39],[12.8,98.55],[12.9,98.7],[13,98.84],[13.1,98.96],[13.2,99.07],[13.3,99.17],[13.4,99.25],[13.5,99.33],[13.6,99.4],[13.7,99.46],[13.8,99.52],[13.9,99.57],[14,99.61]],"label":"Getting expensive","labelAt":[10.5,89],"anchor":"start"},{"step":5,"points":[[4,0.03],[4.1,0.03],[4.2,0.03],[4.3,0.04],[4.4,0.04],[4.5,0.05],[4.6,0.06],[4.7,0.06],[4.8,0.07],[4.9,0.08],[5,0.09],[5.1,0.1],[5.2,0.12],[5.3,0.13],[5.4,0.15],[5.5,0.17],[5.6,0.19],[5.7,0.22],[5.8,0.25],[5.9,0.28],[6,0.32],[6.1,0.36],[6.2,0.41],[6.3,0.46],[6.4,0.52],[6.5,0.59],[6.6,0.67],[6.7,0.76],[6.8,0.86],[6.9,0.97],[7,1.1],[7.1,1.24],[7.2,1.41],[7.3,1.59],[7.4,1.8],[7.5,2.03],[7.6,2.3],[7.7,2.6],[7.8,2.93],[7.9,3.31],[8,3.73],[8.1,4.21],[8.2,4.74],[8.3,5.34],[8.4,6.01],[8.5,6.75],[8.6,7.59],[8.7,8.51],[8.8,9.53],[8.9,10.67],[9,11.92],[9.1,13.3],[9.2,14.8],[9.3,16.45],[9.4,18.24],[9.5,20.18],[9.6,22.27],[9.7,24.51],[9.8,26.89],[9.9,29.42],[10,32.08],[10.1,34.86],[10.2,37.75],[10.3,40.73],[10.4,43.78],[10.5,46.88],[10.6,50],[10.7,53.12],[10.8,56.22],[10.9,59.27],[11,62.25],[11.1,65.14],[11.2,67.92],[11.3,70.58],[11.4,73.11],[11.5,75.49],[11.6,77.73],[11.7,79.82],[11.8,81.76],[11.9,83.55],[12,85.2],[12.1,86.7],[12.2,88.08],[12.3,89.33],[12.4,90.47],[12.5,91.49],[12.6,92.41],[12.7,93.25],[12.8,93.99],[12.9,94.66],[13,95.26],[13.1,95.79],[13.2,96.27],[13.3,96.69],[13.4,97.07],[13.5,97.4],[13.6,97.7],[13.7,97.97],[13.8,98.2],[13.9,98.41],[14,98.59]],"label":"Too expensive","labelAt":[12.2,76],"anchor":"start"}],"markers":[{"step":7,"x":7.742499999999921,"y":2.73626239537732,"label":"Optimal price","ex":"Optimal: CHF 7.70","dy":5,"dx":-12,"anchor":"end"},{"step":7,"x":8.302499999999961,"y":31.42001634730659,"label":"Indifference price","ex":"Indifference: CHF 8.30","dx":14,"dy":5,"anchor":"start"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

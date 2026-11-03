@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opportunity Solution Tree — Topoi</title>
+<meta name="description" content="A map from one business outcome to the customer needs behind it, the ideas that could meet them, and the tests that check those ideas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-planning-and-prioritization"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5 5 8l3-3M3.5 12.5 5 14l3-3M3.5 18.5 5 20l3-3"/><path d="M11 6.5h9.5M11 12.5h9.5M11 18.5h9.5"/></svg>Planning and prioritization</a></p>
+    <h1>Opportunity Solution Tree</h1>
+    <p class="lede">A map from one business outcome to the customer needs behind it, the ideas that could meet them, and the tests that check those ideas.</p>
+    <p class="origin">Teresa Torres, Product Talk</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Opportunity Solution Tree">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Kontor</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Desired outcome</span></button>
+        <p class="gen">Start at the top with one outcome the team is asked to move. It should be measurable and within the team’s influence.</p><p class="ex">Raise the share of businesses that finance a second invoice within 60 days from 26% to 35%.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Opportunities</span></button>
+        <p class="gen">Map the customer needs, pains and desires you heard in interviews that, if addressed, would move the outcome. Phrase them in the customer’s words.</p><p class="ex">“I’m not sure the first payout was worth the fee.” “I forget Kontor exists until cash gets tight.” “My accountant doesn’t know I use it.”</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Choose a target</span></button>
+        <p class="gen">Compare the opportunities and pick one to work on. Size, how often it comes up and fit with strategy all matter.</p><p class="ex">Kontor picks “I forget Kontor exists until cash gets tight”, which came up in 9 of 12 interviews.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Solutions</span></button>
+        <p class="gen">Generate several solutions for the target opportunity, not just one. Comparing options leads to better choices.</p><p class="ex">An alert when a large invoice is issued, a monthly cash-gap forecast, and suggested invoices to finance.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Assumption tests</span></button>
+        <p class="gen">For the most promising solution, find the riskiest assumptions and test them quickly before building anything.</p><p class="ex">Before building alerts, Kontor shows a mock alert to 200 users and interviews 8 about how they plan cash.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which customer need should we work on to move our outcome, and how do we know our idea will work?</p></section>
+      <section><h2>When to use it</h2><ul><li>A team owns an outcome, such as retention, and has to choose what to work on.</li><li>Stakeholders push solutions before anyone has agreed on the customer need.</li><li>Product marketing and product want a shared view of what customers are telling them.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Without regular customer interviews. The opportunities would be guesses.</li><li>For a fixed project with a known scope, where there is nothing to discover.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Agree on one outcome with leadership and write it at the top.</li><li>Interview customers every week and add the needs you hear as opportunities.</li><li>Group similar opportunities and break big ones into smaller, more specific ones.</li><li>Choose one target opportunity, then brainstorm at least three solutions for it.</li><li>Test the riskiest assumption of the best solutions before you build or launch.</li></ol></section>
+      <section><h2>Worked example: Kontor</h2>
+        <p>Kontor is a fictional fintech that lets small businesses get paid early on their invoices.</p>
+        <dl class="example-list"><dt>Desired outcome</dt><dd>Raise the share of businesses that finance a second invoice within 60 days from 26% to 35%.</dd><dt>Opportunities</dt><dd>“I’m not sure the first payout was worth the fee.” “I forget Kontor exists until cash gets tight.” “My accountant doesn’t know I use it.”</dd><dt>Choose a target</dt><dd>Kontor picks “I forget Kontor exists until cash gets tight”, which came up in 9 of 12 interviews.</dd><dt>Solutions</dt><dd>An alert when a large invoice is issued, a monthly cash-gap forecast, and suggested invoices to finance.</dd><dt>Assumption tests</dt><dd>Before building alerts, Kontor shows a mock alert to 200 users and interviews 8 about how they plan cash.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Writing solutions in the opportunity row, such as “needs a dashboard”.</li><li>Going straight from the outcome to one favourite solution.</li><li>Letting the tree go stale. It is a working document, updated as you learn.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>OPPORTUNITY SOLUTION TREE — [Team], [date]
+
+Desired outcome:
+
+Opportunities (in the customer’s words):
+  1.
+  2.
+  3.
+
+Target opportunity and why:
+
+Solutions for the target:
+  1.
+  2.
+  3.
+
+Riskiest assumptions and tests:
+  Assumption:            Test:            Result:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Teresa Torres, Continuous Discovery Habits, Product Talk, 2021.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="aarrr.html">AARRR Pirate Metrics</a></li><li><a href="kano-model.html">Kano Model</a></li><li><a href="jobs-to-be-done.html">Jobs-to-be-Done</a></li><li><a href="rice.html">RICE Scoring</a></li><li><span>Build, Measure, Learn, coming soon</span></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Choosing what to build or market next, with evidence</dd><dt>You need</dt><dd>One clear outcome and regular customer interviews</dd><dt>You get</dt><dd>A visible chain from outcome to need to idea to test</dd><dt>Time</dt><dd>Set up in a day, then updated weekly</dd><dt>Example company</dt><dd>Kontor, fintech</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"tree","viewBox":"0 0 800 440","alt":"Opportunity solution tree: a desired outcome at the top, three customer opportunities below it, one chosen as the target, three solutions under the target, and two assumption tests under one solution.","nodes":[{"id":"o","step":1,"x":270,"y":12,"w":260,"h":70,"label":"Desired outcome","text":"A measurable outcome the team owns","ex":"Second invoice within 60 days: 26% to 35%"},{"id":"p1","parent":"o","step":2,"x":20,"y":128,"w":230,"h":72,"label":"Opportunity","text":"A need heard in interviews","ex":"Not sure the first payout was worth the fee"},{"id":"p2","parent":"o","step":2,"x":285,"y":128,"w":230,"h":72,"label":"Opportunity","text":"A pain customers describe","ex":"I forget Kontor until cash gets tight"},{"id":"p3","parent":"o","step":2,"x":550,"y":128,"w":230,"h":72,"label":"Opportunity","text":"A desire they mention","ex":"My accountant doesn’t know I use it"},{"id":"s1","parent":"p2","step":4,"x":110,"y":250,"w":190,"h":66,"label":"Solution","text":"One idea for the target","ex":"Alert when a large invoice is issued"},{"id":"s2","parent":"p2","step":4,"x":305,"y":250,"w":190,"h":66,"label":"Solution","text":"Another idea","ex":"Monthly cash-gap forecast"},{"id":"s3","parent":"p2","step":4,"x":500,"y":250,"w":190,"h":66,"label":"Solution","text":"A third idea","ex":"Suggested invoices to finance"},{"id":"t1","parent":"s1","step":5,"x":20,"y":362,"w":190,"h":66,"label":"Assumption test","text":"A quick, cheap test","ex":"Mock alert shown to 200 users"},{"id":"t2","parent":"s1","step":5,"x":220,"y":362,"w":190,"h":66,"label":"Assumption test","text":"Another test","ex":"Interviews with 8 users on cash planning"}],"target":{"id":"p2","step":3,"label":"Target","ex":"Target: 9 of 12"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>
