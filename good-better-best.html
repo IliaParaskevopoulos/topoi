@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good, Better, Best — Topoi</title>
+<meta name="description" content="Three versions at three prices, so each segment finds its fit and most choose the middle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-pricing-and-packaging"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V3h9l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>Pricing and packaging</a></p>
+    <h1>Good, Better, Best</h1>
+    <p class="lede">Three versions at three prices, so each segment finds its fit and most choose the middle.</p>
+    <p class="origin">Long-standing retail practice; now standard in software pricing</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Good, Better, Best">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Kontor</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Good</span></button>
+        <p class="gen">The entry tier: enough to solve the core need, at a low barrier. It brings in price-sensitive buyers.</p><p class="ex">Pay as you go: 1.9% fee per invoice, no monthly cost.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Better</span></button>
+        <p class="gen">The tier you want most customers to choose: the best value for the main segment.</p><p class="ex">CHF 49 a month: 1.2% fee, automatic sync, two users.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Best</span></button>
+        <p class="gen">The premium tier for buyers who need more. It also makes the middle tier look reasonable.</p><p class="ex">CHF 149 a month: 0.8% fee, a credit line, a named contact.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Design the middle to win</span></button>
+        <p class="gen">Set the differences so the middle tier is the obvious choice for your main segment. Each step up should add value one group clearly wants.</p><p class="ex">Businesses that finance more than about CHF 7,000 a month pay less on the CHF 49 plan, so most choose it.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">How do we package our offer so different customers pay for the value they need?</p></section>
+      <section><h2>When to use it</h2><ul><li>Customers differ clearly in how much they use or value the product.</li><li>Launching a new pricing model.</li><li>Too many buyers choose the cheapest option, or none.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Products with one clear use and one buyer type.</li><li>Large negotiated deals priced case by case.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Segment customers by the value they get, not by company size alone.</li><li>Choose a value metric that grows with value, such as invoices or users.</li><li>Put each feature in the lowest tier where its main segment needs it.</li><li>Price the tiers with research such as Van Westendorp or conjoint.</li><li>Watch the tier mix after launch and adjust the fences.</li></ol></section>
+      <section><h2>Worked example: Kontor</h2>
+        <p>Kontor is a fictional fintech that lets small businesses get paid early on their invoices.</p>
+        <dl class="example-list"><dt>Good</dt><dd>Pay as you go: 1.9% fee per invoice, no monthly cost.</dd><dt>Better</dt><dd>CHF 49 a month: 1.2% fee, automatic sync, two users.</dd><dt>Best</dt><dd>CHF 149 a month: 0.8% fee, a credit line, a named contact.</dd><dt>Design the middle to win</dt><dd>Businesses that finance more than about CHF 7,000 a month pay less on the CHF 49 plan, so most choose it.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>A good tier so complete that nobody upgrades.</li><li>Tiers that differ only in quantity, with no reason to step up.</li><li>Too many tiers, which slows the decision.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>GOOD, BETTER, BEST — [Product]
+
+Value metric:
+
+Good:    price /  for whom /  includes
+Better:  price /  for whom /  includes
+Best:    price /  for whom /  includes
+
+Why most will choose Better:
+Fences between tiers:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A long-standing retail and catalogue practice; there is no single original source.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="van-westendorp.html">Van Westendorp Price Sensitivity Meter</a></li><li><span>Value metric, coming soon</span></li><li><span>Leaders, Fillers, Killers, coming soon</span></li><li><span>Decoy and anchoring, coming soon</span></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Packaging and pricing an offer for different segments</dd><dt>You need</dt><dd>Segments that value different things, and a view of willingness to pay</dd><dt>You get</dt><dd>Three tiers with clear differences and a target tier for most buyers</dd><dt>Time</dt><dd>Two to three workshops, plus pricing research</dd><dt>Example company</dt><dd>Kontor, fintech</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":4,"diagram":{"type":"tiers","viewBox":"0 0 800 450","alt":"Three pricing tiers rising from good to better to best, with the middle tier marked as the one most customers choose.","tiers":[{"step":1,"height":230,"title":"Good","sub":"Entry price","subEx":"Pay as you go","items":"• Core need solved\n• Low barrier","itemsEx":"• 1.9% fee per invoice\n• No monthly cost\n• One user"},{"step":2,"height":300,"title":"Better","sub":"Main segment","subEx":"CHF 49 a month","items":"• Best value\n• What most need","itemsEx":"• 1.2% fee per invoice\n• Automatic sync\n• Two users"},{"step":3,"height":370,"title":"Best","sub":"Premium","subEx":"CHF 149 a month","items":"• Everything\n• For heavy users","itemsEx":"• 0.8% fee per invoice\n• Credit line\n• Named contact"}],"note":{"step":4,"at":1,"label":"Most should choose this","ex":"Most choose CHF 49 plan"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RICE Scoring — Topoi</title>
+<meta name="description" content="Score ideas on reach, impact, confidence and effort, so you can compare them fairly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-planning-and-prioritization"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5 5 8l3-3M3.5 12.5 5 14l3-3M3.5 18.5 5 20l3-3"/><path d="M11 6.5h9.5M11 12.5h9.5M11 18.5h9.5"/></svg>Planning and prioritization</a></p>
+    <h1>RICE Scoring</h1>
+    <p class="lede">Score ideas on reach, impact, confidence and effort, so you can compare them fairly.</p>
+    <p class="origin">Sean McBride, Intercom, around 2016</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the RICE Scoring">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Kontor</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Reach</span></button>
+        <p class="gen">How many people the idea affects in a set period. Use real numbers where you can.</p><p class="ex">Large-invoice alerts: about 1,100 active businesses a quarter.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Impact</span></button>
+        <p class="gen">How much it moves the goal for each person reached, on a fixed scale: 3 massive, 2 high, 1 medium, 0.5 low, 0.25 minimal.</p><p class="ex">High: 2.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Confidence</span></button>
+        <p class="gen">How sure you are of the reach and impact estimates: 100% high, 80% medium, 50% low.</p><p class="ex">Low: 50%, with one test so far.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Effort</span></button>
+        <p class="gen">Total work needed from all teams, in person-months.</p><p class="ex">3 person-months.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Calculate and compare</span></button>
+        <p class="gen">Score = reach × impact × confidence ÷ effort. Use the score to start a discussion, not to end it.</p><p class="ex">1,100 × 2 × 50% ÷ 3 ≈ 367. The cash-gap forecast scores 210, so alerts go first.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which of our ideas will deliver the most value for the effort?</p></section>
+      <section><h2>When to use it</h2><ul><li>Ranking a long list of ideas with limited capacity.</li><li>Making the reasons behind priorities visible to stakeholders.</li><li>Comparing ideas from different teams on one scale.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Strategic bets whose value is not captured by near-term reach.</li><li>When nobody can estimate reach or effort even roughly.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Agree the goal the impact score refers to.</li><li>Fix the scales for impact and confidence before scoring.</li><li>Estimate each idea with the people who will do the work.</li><li>Calculate scores and sort the list.</li><li>Discuss the top and bottom of the list; adjust where judgement disagrees, and write down why.</li></ol></section>
+      <section><h2>Worked example: Kontor</h2>
+        <p>Kontor is a fictional fintech that lets small businesses get paid early on their invoices.</p>
+        <dl class="example-list"><dt>Reach</dt><dd>Large-invoice alerts: about 1,100 active businesses a quarter.</dd><dt>Impact</dt><dd>High: 2.</dd><dt>Confidence</dt><dd>Low: 50%, with one test so far.</dd><dt>Effort</dt><dd>3 person-months.</dd><dt>Calculate and compare</dt><dd>1,100 × 2 × 50% ÷ 3 ≈ 367. The cash-gap forecast scores 210, so alerts go first.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Inflating confidence to push a favourite idea.</li><li>Forgetting effort from other teams, such as legal or support.</li><li>Treating the score as the decision.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>RICE — [Team], [period], goal: [metric]
+
+Idea            Reach    Impact    Confidence    Effort    Score
+1.
+2.
+3.
+
+Score = Reach × Impact × Confidence ÷ Effort</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Sean McBride, “RICE: Simple Prioritization for Product Managers”, Intercom blog, around 2016.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="opportunity-solution-tree.html">Opportunity Solution Tree</a></li><li><a href="kano-model.html">Kano Model</a></li><li><span>MoSCoW, coming soon</span></li><li><span>OKRs, coming soon</span></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Ranking product, marketing or growth ideas</dd><dt>You need</dt><dd>Rough estimates of reach, impact, confidence and effort</dd><dt>You get</dt><dd>A ranked list with the reasoning written down</dd><dt>Time</dt><dd>Minutes per idea once the scales are agreed</dd><dt>Example company</dt><dd>Kontor, fintech</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"acronym","viewBox":"0 0 800 300","alt":"RICE scoring: reach, impact, confidence and effort, combined into a score.","items":[{"step":1,"letter":"R","title":"Reach","text":"People affected per period","ex":"Active businesses per quarter","status":"Number","statusEx":"1,100"},{"step":2,"letter":"I","title":"Impact","text":"Effect per person: 0.25 to 3","ex":"Effect on second-invoice rate","status":"0.25 to 3","statusEx":"2"},{"step":3,"letter":"C","title":"Confidence","text":"How sure you are: 50% to 100%","ex":"One test so far","status":"Percent","statusEx":"50%"},{"step":4,"letter":"E","title":"Effort","text":"Person-months across all teams","ex":"Product, design and marketing","status":"Person-months","statusEx":"3"}],"score":{"step":5}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

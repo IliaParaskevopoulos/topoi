@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jobs-to-be-Done — Topoi</title>
+<meta name="description" content="Customers do not buy products; they “hire” them to make progress in a specific situation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html">Topoi<span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-customer-understanding"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Customer understanding</a></p>
+    <h1>Jobs-to-be-Done</h1>
+    <p class="lede">Customers do not buy products; they “hire” them to make progress in a specific situation.</p>
+    <p class="origin">Clayton Christensen and colleagues, 2003; job stories from Intercom, around 2013</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Jobs-to-be-Done">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Nordhaus Home</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">The situation</span></button>
+        <p class="gen">Start with the circumstance that triggers the need. The same person has different jobs in different situations.</p><p class="ex">When I’ve just moved into a new flat and the rooms are empty.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">The motivation</span></button>
+        <p class="gen">What the customer wants to do in that situation, in their words, without naming a product.</p><p class="ex">I want to get the basics in place within a weekend.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">The outcome</span></button>
+        <p class="gen">The progress they expect: what will be better once the job is done.</p><p class="ex">So I can feel at home and invite friends over.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">The functional job</span></button>
+        <p class="gen">The practical task to get done, which you can usually measure.</p><p class="ex">Furnish a living room and bedroom quickly, within budget.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Emotional and social jobs</span></button>
+        <p class="gen">How they want to feel, and how they want to be seen by others. These often decide the purchase.</p><p class="ex">Feel settled, and not be embarrassed when people visit.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">What they hire today</span></button>
+        <p class="gen">The current solutions, including doing nothing. These are your real competitors.</p><p class="ex">A weekend at a big-box store, second-hand marketplaces, or living with boxes for weeks.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">What progress is the customer trying to make, and what are they hiring today to make it?</p></section>
+      <section><h2>When to use it</h2><ul><li>Finding out why customers really buy, beyond features.</li><li>Finding competitors you did not know you had.</li><li>Writing positioning and messaging in the customer’s terms.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>When you need a demographic profile for media buying. Jobs describe situations, not audiences.</li><li>Without talking to customers. Jobs written at a desk are guesses.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Interview people who bought (or switched) in the last few months.</li><li>Ask about the moment they started looking and what pushed them.</li><li>Write job statements in their words: situation, motivation, outcome.</li><li>Note functional, emotional and social sides, and what else they considered.</li><li>Group similar jobs and choose the ones your product serves best.</li></ol></section>
+      <section><h2>Worked example: Nordhaus Home</h2>
+        <p>Nordhaus Home is a fictional chain of 35 home-goods stores.</p>
+        <dl class="example-list"><dt>The situation</dt><dd>When I’ve just moved into a new flat and the rooms are empty.</dd><dt>The motivation</dt><dd>I want to get the basics in place within a weekend.</dd><dt>The outcome</dt><dd>So I can feel at home and invite friends over.</dd><dt>The functional job</dt><dd>Furnish a living room and bedroom quickly, within budget.</dd><dt>Emotional and social jobs</dt><dd>Feel settled, and not be embarrassed when people visit.</dd><dt>What they hire today</dt><dd>A weekend at a big-box store, second-hand marketplaces, or living with boxes for weeks.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Writing the job around your product (“I want to use Nordhaus…”).</li><li>Ignoring emotional and social jobs, which often decide the purchase.</li><li>Treating personas and jobs as the same thing.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>JOB STORY — [Product], [segment]
+
+When [situation],
+I want to [motivation],
+so I can [expected outcome].
+
+Functional job:
+Emotional and social jobs:
+What they hire today:
+What would make them switch:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Clayton M. Christensen and Michael E. Raynor, The Innovator’s Solution, Harvard Business School Press, 2003.</li><li>Clayton M. Christensen, Taddy Hall, Karen Dillon and David S. Duncan, Competing Against Luck, HarperBusiness, 2016.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="value-proposition-canvas.html">Value Proposition Canvas</a></li><li><span>Forces of Progress, coming soon</span></li><li><span>Outcome-Driven Innovation, coming soon</span></li><li><a href="obviously-awesome.html">Obviously Awesome</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Understanding why customers buy, and who you really compete with</dd><dt>You need</dt><dd>Interviews with recent buyers about the moment they decided</dd><dt>You get</dt><dd>Job statements that guide product, positioning and messaging</dd><dt>Time</dt><dd>Ten to fifteen interviews over two weeks</dd><dt>Example company</dt><dd>Nordhaus Home, retail</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":6,"diagram":{"type":"statement","viewBox":"0 0 800 395","alt":"A job story template: when a situation, I want to make progress, so I can reach an outcome, plus the functional, emotional and social jobs, and what customers hire today.","parts":[{"step":1,"lead":"When","slot":"[the situation that triggers the need]","ex":"I’ve just moved into a new flat and the rooms are empty"},{"step":2,"lead":"I want to","slot":"[the progress they want to make]","ex":"get the basics in place within a weekend"},{"step":3,"lead":"so I can","slot":"[the outcome they expect]","ex":"feel at home and invite friends over"},{"step":4,"lead":"Functional","slot":"[the practical task]","ex":"Furnish a living room and bedroom fast, within budget"},{"step":5,"lead":"Emotional, social","slot":"[how they want to feel and be seen]","ex":"Feel settled; not embarrassed when people visit"},{"step":6,"lead":"Hired today","slot":"[current solutions, including doing nothing]","ex":"Big-box store weekend, second-hand sites, living with boxes"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>
