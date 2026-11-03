@@ -1,6 +1,6 @@
 // The library map: only practical product marketing tools.
-// Left out on purpose: psychology and persuasion models, generic management and planning tools,
-// product-development methods, pure copywriting formulas and brand theory.
+// Left out on purpose: generic management and planning tools, product-development methods and
+// pure copywriting formulas. Brand and Content are kept as categories at Ilia's request.
 // Entries with a slug have a page in content/; `was` is the older name, so links using it still work.
 module.exports = [
   {
@@ -37,7 +37,7 @@ module.exports = [
       { slug: 'obviously-awesome' }, { slug: 'positioning-statement', was: 'Positioning statement (Moore)' },
       { slug: 'ries-trout-positioning', was: 'Positioning (Ries and Trout)' }, { slug: 'onlyness-statement', was: 'Onlyness statement' },
       { slug: 'category-design', was: 'Category Design' }, { slug: 'whole-product', was: 'Whole Product' },
-      { slug: 'crossing-the-chasm' }, { slug: 'brand-architecture', was: 'Brand architecture' }
+      { slug: 'crossing-the-chasm' }
     ]
   },
   {
@@ -51,6 +51,17 @@ module.exports = [
       { slug: 'fab', was: 'Features, Advantages, Benefits' }, { slug: 'benefit-ladder', was: 'Benefit ladder' },
       { slug: 'value-proposition-formula', was: 'Value proposition formula' },
       { slug: 'why-change-why-now-why-us', was: 'Why change, why now, why us' }
+    ]
+  },
+  {
+    name: 'Brand',
+    icon: 'brand',
+    blurb: 'What the company stands for, how its products are named, and how brand and demand work together.',
+    items: [
+      { slug: 'brand-pyramid', was: 'Brand Pyramid (CBBE)' }, { slug: 'brand-identity-prism', was: 'Brand Identity Prism' },
+      { slug: 'brand-key', was: 'Brand Key' }, { slug: 'brand-archetypes', was: 'Brand archetypes' },
+      { slug: 'brand-architecture', was: 'Brand architecture' }, { slug: 'how-brands-grow', was: 'How Brands Grow' },
+      { slug: '95-5-rule', was: '95-5 Rule' }, { slug: 'brand-activation-balance', was: 'Brand and activation balance' }
     ]
   },
   {
@@ -75,7 +86,7 @@ module.exports = [
       { slug: 'bowling-alley', was: 'Bowling alley' }, { slug: 'marketing-mix', was: 'Marketing mix: 4Ps and 7Ps' },
       { slug: 'save-framework', was: 'SAVE' }, { slug: 'gtm-motions', was: 'GTM motions' },
       { slug: 'abm-tiers', was: 'ABM tiers' }, { slug: 'product-lifecycle', was: 'Product lifecycle' },
-      { slug: 'pr-faq', was: 'Working Backwards PR/FAQ' }, { slug: 'peso-model', was: 'PESO model' }
+      { slug: 'pr-faq', was: 'Working Backwards PR/FAQ' }
     ]
   },
   {
@@ -98,6 +109,17 @@ module.exports = [
     items: [
       { slug: 'aarrr' }, { slug: 'flywheel' }, { slug: 'bow-tie', was: 'Bow-tie model' },
       { slug: 'tofu-mofu-bofu', was: 'TOFU, MOFU, BOFU' }
+    ]
+  },
+  {
+    name: 'Content and channels',
+    icon: 'content',
+    blurb: 'Planning content and choosing where it runs.',
+    items: [
+      { slug: 'hub-hero-hygiene', was: 'Hub, Hero, Hygiene' }, { slug: 'topic-clusters', was: 'Topic clusters' },
+      { slug: 'they-ask-you-answer', was: 'They Ask, You Answer' }, { slug: 'peso-model', was: 'PESO model' },
+      { slug: 'cope', was: 'COPE' }, { slug: 'content-marketing-matrix', was: 'Content marketing matrix' },
+      { slug: 'content-atomization', was: 'Content atomization' }
     ]
   }
 ];

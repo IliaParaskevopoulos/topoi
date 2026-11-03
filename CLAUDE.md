@@ -8,17 +8,17 @@ animated diagram that builds the framework up step by step. Owner: Ilia Paraskev
 (B2B product marketer, Basel; site will sit under his brand, iliaparaskevopoulos.com).
 
 ## Status
-Complete: 80 pages in 8 categories, every catalogue entry drawn. The home page hero animation
+Complete: 93 pages in 10 categories, every catalogue entry drawn. The home page hero animation
 draws a rotating set of frameworks (the `HERO` list in build.js).
 
 ## Scope rule (decided by Ilia)
-Only frameworks strictly connected to the practice of product marketing: research, competitive
-analysis, positioning, messaging, pricing and packaging, launch and go-to-market, sales
-enablement, and adoption and growth. Left out on purpose: psychology and persuasion models
-(e.g. Golden Circle, Hook Model, Fogg, brand archetypes), generic management and planning tools
-(OKRs, SOSTAC, RICE, MoSCoW), product-development methods (Opportunity Solution Tree, Double
-Diamond), pure copywriting formulas (AIDA, PAS) and brand theory (CBBE, Brand Key, How Brands
-Grow). Apply the same rule to any new addition.
+Practical product marketing tools: research, competitive analysis, positioning, messaging, brand,
+pricing and packaging, launch and go-to-market, sales enablement, adoption and growth, and content.
+Ilia asked to keep the Brand category (including Brand Archetypes) and the Content category.
+Left out on purpose: the Golden Circle (psychology, not a practical tool), the Hook and Fogg
+behaviour models, generic management and planning tools (OKRs, SMART, SOSTAC, RACE, RICE, MoSCoW),
+product-development methods (Opportunity Solution Tree, Double Diamond, Stage-Gate) and pure
+copywriting formulas (AIDA, PAS, Before-After-Bridge). Apply the same rule to new additions.
 
 ## Decisions so far
 - **Animations are code, not video**: SVG drawn by `src/engine.js`. Light, sharp, readable by
@@ -36,8 +36,8 @@ Grow). Apply the same rule to any new addition.
   `bowtie` (bow-tie model). `chain` takes up to 8 nodes (4 per row above 6).
   Possible later: ladder, canvas grid (Business Model Canvas,
   Lean Canvas, Empathy Map), bow-tie, double diamond.
-- **Logo: Seal.** A Byzantine purple disc (#702963) with a gold Greek τ, the first letter of τόποι,
-  like a Byzantine seal. Files in `src/brand/` (favicon.svg, favicon-32.png, apple-touch-icon.png,
+- **Logo: Seal.** A plain Byzantine purple disc (#702963) with a gold Greek τ, the first letter of
+  τόποι. No ring or dots (Ilia's call). Files in `src/brand/` (favicon.svg, favicon-32.png, apple-touch-icon.png,
   icon-512.png), copied to `docs/assets/` by the build and used as the tab icon and in the header.
 - **Content files**: a file in `content/` may export one framework or an array of them
   (the new pages live in `batch-*.js` files by category).

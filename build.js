@@ -62,14 +62,14 @@ const shell = (title, desc, body) => `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/engine.js" defer></script>
 </head>
 <body>
-<header class="site"><a class="brand" href="index.html" aria-label="${BRAND}, home"><img class="brand-mark" src="assets/favicon.svg" alt="" width="30" height="30"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="${AUTHOR.url}">by ${AUTHOR.name}</a></header>
+<header class="site"><a class="brand" href="index.html" aria-label="${BRAND}, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><a class="by" href="${AUTHOR.url}">by ${AUTHOR.name}</a></header>
 ${body}
 <footer class="foot">${BRAND} by <a href="${AUTHOR.url}">${AUTHOR.name}</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
 </body>
