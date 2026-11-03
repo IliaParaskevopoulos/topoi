@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value Proposition Canvas — Topoi</title>
+<meta name="description" content="Two shapes side by side: what a customer is trying to get done, and how your product helps. Fit is where they match.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-customer-understanding"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Customer understanding</a></p>
+    <h1>Value Proposition Canvas</h1>
+    <p class="lede">Two shapes side by side: what a customer is trying to get done, and how your product helps. Fit is where they match.</p>
+    <p class="origin">Alexander Osterwalder and colleagues, Strategyzer, 2014</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Value Proposition Canvas">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Customer profile</span></button>
+        <p class="gen">Start on the right with one customer segment. Draw the profile before you think about your product.</p><p class="ex">Segment: maintenance managers at manufacturing plants with 50 to 500 staff.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Customer jobs</span></button>
+        <p class="gen">What they are trying to get done: functional tasks, social goals and emotional needs.</p><p class="ex">Keep production lines running. Pass safety and quality audits.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Pains</span></button>
+        <p class="gen">What annoys or blocks them before, during or after the job: risks, obstacles and bad outcomes.</p><p class="ex">Unplanned breakdowns, and work orders lost on paper and spreadsheets.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Gains</span></button>
+        <p class="gen">The outcomes and benefits they want, including ones that would surprise them.</p><p class="ex">Fewer stoppages, and audit records ready in minutes.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Value map</span></button>
+        <p class="gen">Now move to the left. The square describes your offer for this segment.</p><p class="ex">Tessera’s maintenance planning software and its onboarding service.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Products and services</span></button>
+        <p class="gen">List what you offer this segment.</p><p class="ex">Maintenance scheduling, a mobile app for technicians, and sensor alerts.</p></li>
+      <li><button type="button"><span class="n">7</span><span class="t">Pain relievers</span></button>
+        <p class="gen">How your offer removes or reduces specific pains. Link each one to a pain on the right.</p><p class="ex">Alerts before parts fail, and every work order in one place.</p></li>
+      <li><button type="button"><span class="n">8</span><span class="t">Gain creators</span></button>
+        <p class="gen">How your offer produces the gains customers want.</p><p class="ex">Planned instead of emergency repairs, and one-click audit reports.</p></li>
+      <li><button type="button"><span class="n">9</span><span class="t">Check the fit</span></button>
+        <p class="gen">Fit is when your pain relievers and gain creators address the pains and gains that matter most. Rank them, then test with real customers.</p><p class="ex">Interviews show unplanned breakdowns are the top pain, so that leads the message.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Does what we offer address the jobs, pains and gains that matter most to this customer?</p></section>
+      <section><h2>When to use it</h2><ul><li>Designing or refining an offer for a specific segment.</li><li>Preparing messaging, so it leads with the pains and gains customers rank highest.</li><li>Reviewing why a product sells well in one segment and poorly in another.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Covering several segments at once. Draw one canvas per segment.</li><li>Without customer evidence. A canvas filled from assumptions looks convincing and can be wrong.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Choose one segment and fill the customer profile first, ideally from interviews.</li><li>Rank jobs, pains and gains by how much they matter to the customer.</li><li>Fill the value map with what you actually offer today.</li><li>Draw a line from each pain reliever and gain creator to the pain or gain it addresses.</li><li>Pains and gains with no line are gaps. Offer elements with no line may not be worth leading with.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Customer profile</dt><dd>Segment: maintenance managers at manufacturing plants with 50 to 500 staff.</dd><dt>Customer jobs</dt><dd>Keep production lines running. Pass safety and quality audits.</dd><dt>Pains</dt><dd>Unplanned breakdowns, and work orders lost on paper and spreadsheets.</dd><dt>Gains</dt><dd>Fewer stoppages, and audit records ready in minutes.</dd><dt>Value map</dt><dd>Tessera’s maintenance planning software and its onboarding service.</dd><dt>Products and services</dt><dd>Maintenance scheduling, a mobile app for technicians, and sensor alerts.</dd><dt>Pain relievers</dt><dd>Alerts before parts fail, and every work order in one place.</dd><dt>Gain creators</dt><dd>Planned instead of emergency repairs, and one-click audit reports.</dd><dt>Check the fit</dt><dd>Interviews show unplanned breakdowns are the top pain, so that leads the message.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Writing the product’s features into the customer profile.</li><li>Listing every possible pain without ranking them.</li><li>Treating fit as proven before customers have confirmed it.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>VALUE PROPOSITION CANVAS — [Segment]
+
+CUSTOMER PROFILE
+Jobs (ranked):
+  1.
+  2.
+Pains (ranked):
+  1.
+  2.
+Gains (ranked):
+  1.
+  2.
+
+VALUE MAP
+Products and services:
+Pain relievers (→ which pain):
+Gain creators (→ which gain):
+
+Gaps and next interviews:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Alexander Osterwalder, Yves Pigneur, Gregory Bernarda and Alan Smith, Value Proposition Design, Wiley, 2014.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="obviously-awesome.html">Obviously Awesome</a></li><li><a href="jobs-to-be-done.html">Jobs-to-be-Done</a></li><li><a href="five-rings.html">5 Rings of Buying Insight</a></li><li><a href="kano-model.html">Kano Model</a></li><li><a href="messaging-house.html">Messaging House</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Checking product–customer fit for one segment</dd><dt>You need</dt><dd>Customer interviews or solid customer insight</dd><dt>You get</dt><dd>A ranked view of what matters to the customer and how your offer answers it</dd><dt>Time</dt><dd>Two hours per segment</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":9,"diagram":{"type":"vpc","viewBox":"0 0 800 430","alt":"Value Proposition Canvas: a value map square with products and services, pain relievers and gain creators, facing a customer profile circle with jobs, pains and gains.","profile":{"step":1,"title":"Customer profile"},"valueMap":{"step":5,"title":"Value map"},"parts":{"jobs":{"step":2,"title":"Jobs","text":"Tasks, goals and needs","ex":"Keep lines running"},"pains":{"step":3,"title":"Pains","text":"Risks and obstacles","ex":"Unplanned breakdowns"},"gains":{"step":4,"title":"Gains","text":"Outcomes they want","ex":"Fewer stops, audit-ready"},"products":{"step":6,"title":"Products and services","text":"What you offer this segment","ex":"Scheduling, technician app, sensor alerts"},"painRelievers":{"step":7,"title":"Pain relievers","text":"How you remove pains","ex":"Alerts before failure"},"gainCreators":{"step":8,"title":"Gain creators","text":"How you create gains","ex":"Planned repairs, instant audits"}},"fit":{"step":9,"label":"Fit","ex":"Fit"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

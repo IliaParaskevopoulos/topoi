@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Lifecycle — Topoi</title>
+<meta name="description" content="Products move through introduction, growth, maturity and decline, and each stage calls for different marketing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-go-to-market-and-launch"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V3.5"/><path d="M5 4h13l-2.5 4.5L18 13H5"/></svg>Go-to-market and launch</a></p>
+    <h1>Product Lifecycle</h1>
+    <p class="lede">Products move through introduction, growth, maturity and decline, and each stage calls for different marketing.</p>
+    <p class="origin">Joel Dean, 1950; popularised by Theodore Levitt, 1965</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Product Lifecycle">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Sales over time</span></button>
+        <p class="gen">Track sales of a product or category from launch to withdrawal. The curve rises, flattens and eventually falls.</p><p class="ex">Tessera places each of its products on one curve.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Introduction</span></button>
+        <p class="gen">Sales are low and costs high. The job is to educate the market, win first customers and prove the product works.</p><p class="ex">Tessera Predict, the new failure-prediction module: pilots with a few plants and hands-on onboarding.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Growth</span></button>
+        <p class="gen">Sales rise fast and competitors arrive. The job is to build preference, widen distribution and scale delivery.</p><p class="ex">The technician mobile app: usage is rising fast and competitors are launching their own apps.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Maturity</span></button>
+        <p class="gen">Growth slows and competition shifts to price. The job is to defend share, differentiate on service and cut cost.</p><p class="ex">Core maintenance scheduling: steady renewals, price pressure, competing on ease of use and support.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Decline</span></button>
+        <p class="gen">Sales fall as needs change or better options appear. Harvest, reposition, or plan the withdrawal.</p><p class="ex">The on-premise edition, which customers are leaving for the cloud version.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Profit follows later</span></button>
+        <p class="gen">Profit usually trails sales: negative at launch, highest in late growth or early maturity, then shrinking.</p><p class="ex">Profit from core scheduling pays for the Predict launch.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Where is each product in its life, and what should marketing do differently because of it?</p></section>
+      <section><h2>When to use it</h2><ul><li>Setting different goals for different products instead of one plan for all.</li><li>Reviewing a portfolio to make sure new products are coming through as old ones decline.</li><li>Explaining to leadership why a mature product gets less launch budget than a new one.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Predicting when a stage will end. The curve describes; it does not forecast.</li><li>Fashion or fad products whose curves look nothing like the classic shape.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Plot sales for each product over the last three to five years, alongside market growth.</li><li>Place each product in a stage based on its sales trend and the state of competition.</li><li>Write one goal per product that fits its stage: educate, grow share, defend, or harvest.</li><li>Check the portfolio balance: enough products in introduction and growth to replace those in decline.</li><li>Review once a year, because products move between stages.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Sales over time</dt><dd>Tessera places each of its products on one curve.</dd><dt>Introduction</dt><dd>Tessera Predict, the new failure-prediction module: pilots with a few plants and hands-on onboarding.</dd><dt>Growth</dt><dd>The technician mobile app: usage is rising fast and competitors are launching their own apps.</dd><dt>Maturity</dt><dd>Core maintenance scheduling: steady renewals, price pressure, competing on ease of use and support.</dd><dt>Decline</dt><dd>The on-premise edition, which customers are leaving for the cloud version.</dd><dt>Profit follows later</dt><dd>Profit from core scheduling pays for the Predict launch.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Treating decline as fate. A repositioning or a new use can restart growth.</li><li>Running growth-stage campaigns for a mature product, where the job is to defend and differentiate.</li><li>Confusing a category’s lifecycle with a single brand’s.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>PRODUCT LIFECYCLE REVIEW — [Portfolio], [year]
+
+Product            Stage          Sales trend      Goal for the year
+1.
+2.
+3.
+
+Portfolio balance:
+  Introduction:
+  Growth:
+  Maturity:
+  Decline:
+
+Gaps and decisions:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Joel Dean, “Pricing Policies for New Products”, Harvard Business Review, 1950.</li><li>Theodore Levitt, “Exploit the Product Life Cycle”, Harvard Business Review, 1965.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="crossing-the-chasm.html">Crossing the Chasm</a></li><li><a href="ansoff-matrix.html">Ansoff Matrix</a></li><li><a href="bcg-matrix.html">BCG Growth-Share Matrix</a></li><li><a href="launch-tiers.html">Launch Tiers</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Setting the right marketing goals per product and balancing a portfolio</dd><dt>You need</dt><dd>Sales history and market growth data for each product</dd><dt>You get</dt><dd>Each product placed on the curve, with stage-specific goals</dd><dt>Time</dt><dd>Two hours with sales data in hand</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":6,"diagram":{"type":"chart","viewBox":"0 0 800 450","left":90,"yTitleGap":34,"alt":"Product lifecycle: a sales curve rising through introduction and growth, flattening in maturity and falling in decline, with a profit curve that starts negative and peaks earlier.","axesStep":1,"x":{"domain":[0,10],"title":"Time"},"y":{"domain":[-0.32,1.3],"title":"Sales and profit"},"hlines":[{"v":0,"step":6,"label":"Break-even","ex":"Break-even","at":6.5,"below":true}],"bands":[{"step":2,"x0":0,"x1":2.5,"label":"Introduction","ex":"Predict module"},{"step":3,"x0":2.5,"x1":5,"label":"Growth","ex":"Mobile app"},{"step":4,"x0":5,"x1":8,"label":"Maturity","ex":"Core scheduling"},{"step":5,"x0":8,"x1":10,"label":"Decline","ex":"On-premise edition"}],"curves":[{"step":1,"points":[[0,0.014],[0.1,0.015],[0.2,0.018],[0.3,0.02],[0.4,0.023],[0.5,0.026],[0.6,0.03],[0.7,0.034],[0.8,0.038],[0.9,0.044],[1,0.05],[1.1,0.056],[1.2,0.064],[1.3,0.072],[1.4,0.082],[1.5,0.092],[1.6,0.104],[1.7,0.117],[1.8,0.131],[1.9,0.147],[2,0.165],[2.1,0.184],[2.2,0.204],[2.3,0.227],[2.4,0.251],[2.5,0.277],[2.6,0.304],[2.7,0.332],[2.8,0.362],[2.9,0.393],[3,0.425],[3.1,0.457],[3.2,0.49],[3.3,0.522],[3.4,0.555],[3.5,0.586],[3.6,0.617],[3.7,0.647],[3.8,0.675],[3.9,0.703],[4,0.728],[4.1,0.752],[4.2,0.774],[4.3,0.795],[4.4,0.813],[4.5,0.83],[4.6,0.846],[4.7,0.86],[4.8,0.872],[4.9,0.883],[5,0.893],[5.1,0.902],[5.2,0.909],[5.3,0.916],[5.4,0.921],[5.5,0.925],[5.6,0.929],[5.7,0.931],[5.8,0.933],[5.9,0.934],[6,0.934],[6.1,0.934],[6.2,0.932],[6.3,0.93],[6.4,0.926],[6.5,0.922],[6.6,0.917],[6.7,0.911],[6.8,0.903],[6.9,0.894],[7,0.884],[7.1,0.872],[7.2,0.859],[7.3,0.844],[7.4,0.827],[7.5,0.809],[7.6,0.788],[7.7,0.766],[7.8,0.741],[7.9,0.715],[8,0.687],[8.1,0.657],[8.2,0.626],[8.3,0.593],[8.4,0.559],[8.5,0.524],[8.6,0.49],[8.7,0.455],[8.8,0.42],[8.9,0.386],[9,0.354],[9.1,0.322],[9.2,0.292],[9.3,0.263],[9.4,0.237],[9.5,0.212],[9.6,0.189],[9.7,0.169],[9.8,0.15],[9.9,0.132],[10,0.117]],"label":"Sales","labelAt":[6.4,0.9264570499387221],"dy":-12,"anchor":"middle"},{"step":6,"points":[[0,-0.256],[0.1,-0.239],[0.2,-0.224],[0.3,-0.209],[0.4,-0.195],[0.5,-0.182],[0.6,-0.169],[0.7,-0.157],[0.8,-0.145],[0.9,-0.133],[1,-0.122],[1.1,-0.111],[1.2,-0.1],[1.3,-0.089],[1.4,-0.079],[1.5,-0.068],[1.6,-0.057],[1.7,-0.045],[1.8,-0.033],[1.9,-0.021],[2,-0.008],[2.1,0.006],[2.2,0.02],[2.3,0.035],[2.4,0.052],[2.5,0.069],[2.6,0.088],[2.7,0.107],[2.8,0.128],[2.9,0.15],[3,0.174],[3.1,0.198],[3.2,0.223],[3.3,0.249],[3.4,0.276],[3.5,0.303],[3.6,0.33],[3.7,0.356],[3.8,0.382],[3.9,0.408],[4,0.432],[4.1,0.456],[4.2,0.478],[4.3,0.498],[4.4,0.517],[4.5,0.534],[4.6,0.549],[4.7,0.563],[4.8,0.574],[4.9,0.584],[5,0.593],[5.1,0.599],[5.2,0.604],[5.3,0.608],[5.4,0.609],[5.5,0.609],[5.6,0.608],[5.7,0.605],[5.8,0.601],[5.9,0.595],[6,0.588],[6.1,0.579],[6.2,0.569],[6.3,0.558],[6.4,0.545],[6.5,0.531],[6.6,0.515],[6.7,0.498],[6.8,0.48],[6.9,0.461],[7,0.441],[7.1,0.421],[7.2,0.4],[7.3,0.378],[7.4,0.356],[7.5,0.334],[7.6,0.312],[7.7,0.29],[7.8,0.269],[7.9,0.249],[8,0.229],[8.1,0.21],[8.2,0.192],[8.3,0.175],[8.4,0.159],[8.5,0.144],[8.6,0.13],[8.7,0.117],[8.8,0.105],[8.9,0.095],[9,0.085],[9.1,0.076],[9.2,0.068],[9.3,0.06],[9.4,0.054],[9.5,0.048],[9.6,0.043],[9.7,0.038],[9.8,0.034],[9.9,0.03],[10,0.026]],"label":"Profit","labelAt":[5.6,0.6081202073884597],"dy":26,"anchor":"middle"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Go-to-Market Motions — Topoi</title>
+<meta name="description" content="Choose how customers first buy: through the product itself, through salespeople, or a mix, depending on deal size.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-go-to-market-and-launch"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V3.5"/><path d="M5 4h13l-2.5 4.5L18 13H5"/></svg>Go-to-market and launch</a></p>
+    <h1>Go-to-Market Motions</h1>
+    <p class="lede">Choose how customers first buy: through the product itself, through salespeople, or a mix, depending on deal size.</p>
+    <p class="origin">Common software go-to-market practice; no single author</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Go-to-Market Motions">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Set the grid</span></button>
+        <p class="gen">Left to right: deal size. Bottom to top: who leads the first sale, the sales team or the product.</p><p class="ex">Tessera maps its customers by plant size and how they first bought.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Product-led</span></button>
+        <p class="gen">Small deals where buyers try and buy on their own.</p><p class="ex">Single-line workshops trying the free plan.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Product-led sales</span></button>
+        <p class="gen">Larger deals that start with product use, then sales steps in using usage signals.</p><p class="ex">Plants that start a pilot on one line, then roll out to the site.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Inside sales</span></button>
+        <p class="gen">Smaller deals that still need a conversation, often by phone or video.</p><p class="ex">Plants under 100 staff with one maintenance manager.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Field and enterprise sales</span></button>
+        <p class="gen">Large, complex deals with account teams.</p><p class="ex">Groups with five or more plants.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Choose per segment</span></button>
+        <p class="gen">Most companies mix motions; the key is choosing one per segment and supporting it with the right marketing.</p><p class="ex">Tessera’s main motion is product-led sales: pilots first, then a site licence.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Should customers buy through the product, through sales, or both?</p></section>
+      <section><h2>When to use it</h2><ul><li>Customer acquisition costs are too high for deal sizes.</li><li>Adding a free plan or a sales team.</li><li>Different segments buy in very different ways.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Before you know how your best customers actually bought.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Map recent deals by size and how they started.</li><li>Find which motion wins each segment most efficiently.</li><li>Choose a primary motion and supporting ones.</li><li>Align marketing: self-serve content, usage alerts, or account-based programmes.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Set the grid</dt><dd>Tessera maps its customers by plant size and how they first bought.</dd><dt>Product-led</dt><dd>Single-line workshops trying the free plan.</dd><dt>Product-led sales</dt><dd>Plants that start a pilot on one line, then roll out to the site.</dd><dt>Inside sales</dt><dd>Plants under 100 staff with one maintenance manager.</dd><dt>Field and enterprise sales</dt><dd>Groups with five or more plants.</dd><dt>Choose per segment</dt><dd>Tessera’s main motion is product-led sales: pilots first, then a site licence.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Adding a free plan without a path to paid.</li><li>Expensive field sales on small deals.</li><li>Running every motion at once with no focus.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>GO-TO-MARKET MOTIONS — [Company]
+
+Segment          Deal size     Motion          Marketing support
+1.
+2.
+
+Primary motion:
+What marketing changes:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A common software go-to-market practice; there is no single original source.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="gtm-canvas.html">Go-to-Market Canvas</a></li><li><a href="abm-tiers.html">Account-Based Marketing Tiers</a></li><li><a href="bow-tie.html">Bow-Tie Model</a></li><li><a href="aarrr.html">AARRR Pirate Metrics</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Choosing or mixing sales and marketing motions</dd><dt>You need</dt><dd>Deal sizes, sales cycle data and product usage data</dd><dt>You get</dt><dd>A motion per segment, with the marketing that supports it</dd><dt>Time</dt><dd>A leadership workshop</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":6,"diagram":{"type":"matrix","viewBox":"0 0 800 500","alt":"Go-to-market motions by deal size and by who leads the first sale: product-led, product-led sales, inside sales and field sales.","axesStep":1,"x":{"title":"Deal size","low":"Small","high":"Large"},"y":{"title":"First sale led by","low":"Sales team","high":"Product"},"quadrants":[{"pos":"tl","step":2,"title":"Product-led","text":"Try and buy alone.","ex":"Free plan for single lines.","risk":"Self-serve","riskEx":"Minor"},{"pos":"tr","step":3,"title":"Product-led sales","text":"Usage first, then sales.","ex":"One-line pilot, then site rollout.","risk":"Usage signals","riskEx":"Main motion"},{"pos":"bl","step":4,"title":"Inside sales","text":"Calls and demos.","ex":"Plants under 100 staff.","risk":"Demos","riskEx":"Supporting"},{"pos":"br","step":5,"title":"Field sales","text":"Account teams, long cycles.","ex":"Groups with 5+ plants.","risk":"Account plans","riskEx":"Supporting"}],"risk":{"step":6,"arrow":false}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

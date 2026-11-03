@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossing the Chasm — Topoi</title>
+<meta name="description" content="New technology spreads through groups of buyers in order, and the hardest jump is from early enthusiasts to the pragmatic mainstream.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-positioning"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Positioning</a></p>
+    <h1>Crossing the Chasm</h1>
+    <p class="lede">New technology spreads through groups of buyers in order, and the hardest jump is from early enthusiasts to the pragmatic mainstream.</p>
+    <p class="origin">Geoffrey Moore, 1991, building on Everett Rogers</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Crossing the Chasm">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Lumora Diagnostics</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Draw the adoption curve</span></button>
+        <p class="gen">Buyers of a new technology fall along a bell curve, from the first to try it to the last. Each group buys for different reasons and trusts different evidence.</p><p class="ex">Lumora’s rapid blood-test reader, which gives GPs an infection result in ten minutes, is the new technology here.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Innovators</span></button>
+        <p class="gen">Technology enthusiasts, about 2.5% of the market. They try new things because they are new. They make valuable first users, but rarely a business on their own.</p><p class="ex">University clinics and research-minded GPs who like to try new diagnostics first.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Early adopters</span></button>
+        <p class="gen">Visionaries, about 13.5%. They buy to get ahead of competitors, accept rough edges and want a big change rather than a small improvement.</p><p class="ex">Practice owners who want to cut unnecessary antibiotic prescriptions and see the reader as a way to stand out.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">The chasm</span></button>
+        <p class="gen">Between early adopters and the early majority sits a gap. Pragmatists do not trust visionaries as references; they want proof from companies like theirs. Many products stall here.</p><p class="ex">Mainstream practices ask for validation in GP settings, a reimbursement code and references from practices like theirs.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Early majority</span></button>
+        <p class="gen">Pragmatists, about 34%. They buy when the solution is complete and proven, and when peers in their segment use it. Moore’s advice is to win one narrow beachhead segment first, then expand.</p><p class="ex">Lumora picks one beachhead: paediatric practices, where parents push for antibiotics and a fast result helps most.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Late majority</span></button>
+        <p class="gen">Conservatives, about 34%. They buy once the technology is the standard and low risk. They want simplicity, support and a good price.</p><p class="ex">Large group practices, once the test is reimbursed and part of clinical guidelines.</p></li>
+      <li><button type="button"><span class="n">7</span><span class="t">Laggards</span></button>
+        <p class="gen">Sceptics, about 16%. They buy only when there is no other option. They are rarely worth marketing to directly.</p><p class="ex">Practices that switch only when their lab stops offering the old send-out test.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Who should we sell to next, and what will they need to see before they buy?</p></section>
+      <section><h2>When to use it</h2><ul><li>Launching a product that asks buyers to change how they work, or that creates a new category.</li><li>Sales slow down after a strong start with early customers.</li><li>Choosing which segment to focus on after the first few wins.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Incremental improvements to an established product. Your buyers are already in the mainstream.</li><li>Low-risk, low-price purchases where buyers do not need peer proof.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Sort your current customers into the five groups. Be honest about how many are visionaries.</li><li>Interview pragmatist prospects to learn what stops them: missing proof, missing features, missing service.</li><li>List the whole product they need, meaning everything beyond the core product that makes it work for them.</li><li>Pick one narrow beachhead segment where you can become the obvious choice quickly.</li><li>Win references in that segment, then move to the adjacent segments they influence.</li></ol></section>
+      <section><h2>Worked example: Lumora Diagnostics</h2>
+        <p>Lumora Diagnostics is a fictional company that makes a rapid blood-test reader for GP clinics.</p>
+        <dl class="example-list"><dt>Draw the adoption curve</dt><dd>Lumora’s rapid blood-test reader, which gives GPs an infection result in ten minutes, is the new technology here.</dd><dt>Innovators</dt><dd>University clinics and research-minded GPs who like to try new diagnostics first.</dd><dt>Early adopters</dt><dd>Practice owners who want to cut unnecessary antibiotic prescriptions and see the reader as a way to stand out.</dd><dt>The chasm</dt><dd>Mainstream practices ask for validation in GP settings, a reimbursement code and references from practices like theirs.</dd><dt>Early majority</dt><dd>Lumora picks one beachhead: paediatric practices, where parents push for antibiotics and a fast result helps most.</dd><dt>Late majority</dt><dd>Large group practices, once the test is reimbursed and part of clinical guidelines.</dd><dt>Laggards</dt><dd>Practices that switch only when their lab stops offering the old send-out test.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Reading early adopter enthusiasm as proof of mainstream demand.</li><li>Choosing a beachhead that is too broad to dominate, such as “all supplement brands”.</li><li>Shipping the core product without the documentation, service and integration pragmatists expect.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>CROSSING THE CHASM — [Product]
+
+Current customers by group:
+  Innovators:
+  Early adopters:
+  Early majority:
+
+What pragmatists need before they buy (the whole product):
+  1.
+  2.
+  3.
+
+Beachhead segment:
+  Who exactly:
+  Why they feel the pain most:
+  References we can win there:
+
+Next segments the beachhead will influence:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Geoffrey A. Moore, Crossing the Chasm, HarperBusiness, 1991 (3rd edition 2014).</li><li>Everett M. Rogers, Diffusion of Innovations, Free Press, 1962.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="obviously-awesome.html">Obviously Awesome</a></li><li><a href="aarrr.html">AARRR Pirate Metrics</a></li><li><a href="whole-product.html">Whole Product</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Launching new technology and choosing the next target segment</dd><dt>You need</dt><dd>A view of who your first customers are and why they bought</dd><dt>You get</dt><dd>One beachhead segment and a list of what it needs before it will buy</dd><dt>Time</dt><dd>Half a day, plus customer interviews</dd><dt>Example company</dt><dd>Lumora Diagnostics, diagnostics</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":7,"diagram":{"type":"bell","viewBox":"0 0 800 480","alt":"Technology adoption lifecycle: a bell curve split into innovators, early adopters, early majority, late majority and laggards, with a chasm between early adopters and early majority.","curveStep":1,"segments":[{"from":-3,"to":-2,"step":2,"title":"Innovators","pct":"2.5%"},{"from":-2,"to":-1,"step":3,"title":"Early adopters","pct":"13.5%"},{"from":-1,"to":0,"step":5,"title":"Early majority","pct":"34%"},{"from":0,"to":1,"step":6,"title":"Late majority","pct":"34%"},{"from":1,"to":3,"step":7,"title":"Laggards","pct":"16%"}],"chasm":{"at":-1,"step":4,"label":"The chasm: proof from peers needed","ex":"GP validation, reimbursement, peer references"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

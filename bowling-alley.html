@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bowling Alley — Topoi</title>
+<meta name="description" content="After the first segment, expand to neighbouring segments one by one, like knocking down bowling pins.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-go-to-market-and-launch"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V3.5"/><path d="M5 4h13l-2.5 4.5L18 13H5"/></svg>Go-to-market and launch</a></p>
+    <h1>Bowling Alley</h1>
+    <p class="lede">After the first segment, expand to neighbouring segments one by one, like knocking down bowling pins.</p>
+    <p class="origin">Geoffrey Moore, Inside the Tornado, 1995</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Bowling Alley">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Lumora Diagnostics</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Head pin</span></button>
+        <p class="gen">The first segment you win, which knocks over the others.</p><p class="ex">Paediatric practices.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Second row</span></button>
+        <p class="gen">Segments next to the head pin: same use case with new customers, or same customers with a new use case.</p><p class="ex">General practices (same use case) and urgent-care centres (similar need).</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Third row</span></button>
+        <p class="gen">Segments reached through the second row’s references and partners.</p><p class="ex">Pharmacies, care homes and occupational health services.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Choose the next pin</span></button>
+        <p class="gen">Pick the next segment where your references and whole product carry over best.</p><p class="ex">Lumora picks general practices: the same reimbursement code and the same associations.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which segment should we move into next, using what we won in the last?</p></section>
+      <section><h2>When to use it</h2><ul><li>You have won a first segment and need to grow.</li><li>Choosing between several expansion options.</li><li>Explaining the growth path to investors or leadership.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Before you have truly won the first segment.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>List segments adjacent to your current one.</li><li>For each, note what carries over: references, product, channels.</li><li>Order them by how much carries over and how big they are.</li><li>Move one pin at a time.</li></ol></section>
+      <section><h2>Worked example: Lumora Diagnostics</h2>
+        <p>Lumora Diagnostics is a fictional company that makes a rapid blood-test reader for GP clinics.</p>
+        <dl class="example-list"><dt>Head pin</dt><dd>Paediatric practices.</dd><dt>Second row</dt><dd>General practices (same use case) and urgent-care centres (similar need).</dd><dt>Third row</dt><dd>Pharmacies, care homes and occupational health services.</dd><dt>Choose the next pin</dt><dd>Lumora picks general practices: the same reimbursement code and the same associations.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Jumping to a big but unrelated segment.</li><li>Expanding before the head pin is secure.</li><li>Ignoring what new segments need in the whole product.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>BOWLING ALLEY — [Product]
+
+Head pin (won):
+Second-row segments and what carries over:
+Third-row segments:
+Next pin and why:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Geoffrey A. Moore, Inside the Tornado, HarperBusiness, 1995.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="beachhead-market.html">Beachhead Market</a></li><li><a href="crossing-the-chasm.html">Crossing the Chasm</a></li><li><a href="whole-product.html">Whole Product</a></li><li><a href="ansoff-matrix.html">Ansoff Matrix</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Planning expansion after the first segment</dd><dt>You need</dt><dd>A won beachhead and knowledge of adjacent segments</dd><dt>You get</dt><dd>An ordered expansion path</dd><dt>Time</dt><dd>One planning session, reviewed yearly</dd><dt>Example company</dt><dd>Lumora Diagnostics, diagnostics</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":4,"diagram":{"type":"tree","viewBox":"0 0 800 360","alt":"Bowling alley: a head pin segment, two segments in the second row, and three in the third row.","nodes":[{"id":"h","step":1,"x":300,"y":12,"w":200,"h":72,"label":"Head pin","text":"First segment won","ex":"Paediatric practices"},{"id":"a","parent":"h","step":2,"x":160,"y":140,"w":200,"h":72,"label":"Second row","text":"Same use, new buyers","ex":"General practices"},{"id":"b","parent":"h","step":2,"x":440,"y":140,"w":200,"h":72,"label":"Second row","text":"Similar need","ex":"Urgent-care centres"},{"id":"c","parent":"a","step":3,"x":30,"y":270,"w":200,"h":72,"label":"Third row","text":"Reached by references","ex":"Pharmacies"},{"id":"d","parent":"a","step":3,"x":300,"y":270,"w":200,"h":72,"label":"Third row","text":"Reached by partners","ex":"Care homes"},{"id":"e","parent":"b","step":3,"x":570,"y":270,"w":200,"h":72,"label":"Third row","text":"New use case","ex":"Occupational health"}],"target":{"id":"a","step":4,"label":"Next","ex":"Next pin"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

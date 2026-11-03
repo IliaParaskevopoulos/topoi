@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benefit Ladder — Topoi</title>
+<meta name="description" content="Climb from a feature to its functional benefit to its emotional benefit, then choose the rung to lead with.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-messaging-and-storytelling"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-6 4.5z"/><path d="M8 9h8M8 12h5"/></svg>Messaging and storytelling</a></p>
+    <h1>Benefit Ladder</h1>
+    <p class="lede">Climb from a feature to its functional benefit to its emotional benefit, then choose the rung to lead with.</p>
+    <p class="origin">Common messaging practice, rooted in means-end research</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Benefit Ladder">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Kontor</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Feature</span></button>
+        <p class="gen">What the product does or has.</p><p class="ex">Connects to your accounting software.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Functional benefit</span></button>
+        <p class="gen">The practical result for the customer.</p><p class="ex">Cash in 24 hours with no paperwork.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Emotional benefit</span></button>
+        <p class="gen">How that result makes the customer feel.</p><p class="ex">Calm before every payroll day.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Choose the rung</span></button>
+        <p class="gen">Lead with the highest rung you can credibly prove, and keep the lower rungs as proof.</p><p class="ex">Headline: “Payroll day, without the panic.” Proof: cash in 24 hours.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which level of benefit should our message lead with?</p></section>
+      <section><h2>When to use it</h2><ul><li>Writing headlines and campaign lines.</li><li>Copy that lists features without saying why they matter.</li><li>Choosing between a rational and an emotional message.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Highly technical buyers early in evaluation, who need the functional rung first.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>Start from one feature that matters to the target segment.</li><li>Ask “so what?” to reach the functional benefit.</li><li>Ask how that result makes the buyer feel.</li><li>Choose the rung to lead with and use the others as proof.</li></ol></section>
+      <section><h2>Worked example: Kontor</h2>
+        <p>Kontor is a fictional fintech that lets small businesses get paid early on their invoices.</p>
+        <dl class="example-list"><dt>Feature</dt><dd>Connects to your accounting software.</dd><dt>Functional benefit</dt><dd>Cash in 24 hours with no paperwork.</dd><dt>Emotional benefit</dt><dd>Calm before every payroll day.</dd><dt>Choose the rung</dt><dd>Headline: “Payroll day, without the panic.” Proof: cash in 24 hours.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Emotional claims with no functional proof.</li><li>Benefits that any competitor could claim.</li><li>Laddering features nobody cares about.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>BENEFIT LADDER — [Product], [segment]
+
+Feature:
+Functional benefit:
+Emotional benefit:
+
+Lead with:
+Proof underneath:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A common messaging practice, related to means-end chain research (Reynolds and Gutman, 1988).</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="laddering.html">Laddering</a></li><li><a href="fab.html">Features, Advantages, Benefits</a></li><li><a href="message-hierarchy.html">Message Hierarchy</a></li><li><a href="messaging-house.html">Messaging House</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Headlines, campaigns and product page copy</dd><dt>You need</dt><dd>Customer insight on why features matter</dd><dt>You get</dt><dd>A ladder of benefits and a clear choice of what to lead with</dd><dt>Time</dt><dd>An hour per message</dd><dt>Example company</dt><dd>Kontor, fintech</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":4,"diagram":{"type":"tiers","viewBox":"0 0 800 450","alt":"Benefit ladder: feature on the lowest rung, functional benefit in the middle and emotional benefit at the top.","tiers":[{"step":1,"height":230,"title":"Feature","sub":"What it does","subEx":"Accounting sync","items":"• A fact about\n  the product","itemsEx":"• Connects to your\n  accounting software"},{"step":2,"height":300,"title":"Functional","sub":"Practical result","subEx":"Cash in 24 hours","items":"• Time, money,\n  effort saved","itemsEx":"• Cash in 24 hours\n• No paperwork"},{"step":3,"height":370,"title":"Emotional","sub":"How it feels","subEx":"Calm on payroll day","items":"• Relief, pride,\n  confidence","itemsEx":"• Calm before\n  every payroll day"}],"note":{"step":4,"at":2,"label":"Lead with the top rung you can prove","ex":"Lead: “without the panic”"}}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

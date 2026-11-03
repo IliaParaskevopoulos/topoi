@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kano Model — Topoi</title>
+<meta name="description" content="Not every feature affects satisfaction the same way. Some are expected, some scale with effort, and some delight.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-customer-understanding"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Customer understanding</a></p>
+    <h1>Kano Model</h1>
+    <p class="lede">Not every feature affects satisfaction the same way. Some are expected, some scale with effort, and some delight.</p>
+    <p class="origin">Noriaki Kano and colleagues, 1984</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Kano Model">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Lumora Diagnostics</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Set the axes</span></button>
+        <p class="gen">Left to right: how fully a need is met. Bottom to top: how customers feel, from dissatisfied to delighted. The dashed line is neutral.</p><p class="ex">Lumora is deciding what to build into the next version of its rapid test reader for GP clinics.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Performance features</span></button>
+        <p class="gen">More is better and less is worse, in a straight line. Customers ask for these directly and compare competitors on them.</p><p class="ex">Time to result. Every minute saved during a consultation counts.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Must-be features</span></button>
+        <p class="gen">Expected as standard. Missing them causes strong dissatisfaction, but doing them well never delights. Customers rarely mention them.</p><p class="ex">Certified accuracy and the regulatory mark. Without them, no clinic buys.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Attractive features</span></button>
+        <p class="gen">Delighters customers did not ask for. Missing them does no harm; having them creates real enthusiasm and a reason to choose you.</p><p class="ex">Results go straight into the clinic’s patient record, with no typing.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Indifferent features</span></button>
+        <p class="gen">Features customers do not care about either way. They cost money and add little.</p><p class="ex">A choice of device colours.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Delighters fade</span></button>
+        <p class="gen">Over time, attractive features become performance features and then must-be features, as competitors copy them and customers get used to them.</p><p class="ex">Automatic transfer to the patient record will soon be expected, so Lumora plans its next delighter now.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which features must we get right, which should we keep improving, and which will make customers choose us?</p></section>
+      <section><h2>When to use it</h2><ul><li>Choosing what goes into the next release when budget is limited.</li><li>Deciding which features to lead with in messaging, and which simply need to be confirmed.</li><li>Checking whether a planned feature is worth building at all.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Very early concepts that customers cannot picture well enough to judge.</li><li>Deciding price. The model sorts features; it does not tell you what they are worth.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>List the features you want to test, each described in plain words.</li><li>For each feature, ask two questions: how would you feel if it were there, and how would you feel if it were not?</li><li>Offer five answers to each: I like it, I expect it, I am neutral, I can live with it, I dislike it.</li><li>Use the Kano evaluation table to classify each answer pair, then take the most common category per feature.</li><li>Make sure every must-be is covered, invest in the performance features that matter most, and add one or two attractive features.</li></ol><p class="note">A fifth category, reverse features, covers things some customers actively dislike. It is left out of the diagram for clarity.</p></section>
+      <section><h2>Worked example: Lumora Diagnostics</h2>
+        <p>Lumora Diagnostics is a fictional company that makes a rapid blood-test reader for GP clinics.</p>
+        <dl class="example-list"><dt>Set the axes</dt><dd>Lumora is deciding what to build into the next version of its rapid test reader for GP clinics.</dd><dt>Performance features</dt><dd>Time to result. Every minute saved during a consultation counts.</dd><dt>Must-be features</dt><dd>Certified accuracy and the regulatory mark. Without them, no clinic buys.</dd><dt>Attractive features</dt><dd>Results go straight into the clinic’s patient record, with no typing.</dd><dt>Indifferent features</dt><dd>A choice of device colours.</dd><dt>Delighters fade</dt><dd>Automatic transfer to the patient record will soon be expected, so Lumora plans its next delighter now.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Asking customers what they want instead of the paired questions. They rarely name must-bes or delighters.</li><li>Treating the result as permanent. Categories shift as the market matures.</li><li>Leading marketing with must-be features. They prevent losing deals, but rarely win them.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>KANO SURVEY — [Product], [segment]
+
+For each feature:
+  If [feature] were included, how would you feel?
+  If [feature] were not included, how would you feel?
+  Answers: I like it / I expect it / I am neutral / I can live with it / I dislike it
+
+Feature                 Category (M / P / A / I / R)   Share of answers
+1.
+2.
+3.
+
+Must-be features to cover:
+Performance features to invest in:
+Attractive features to add:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>Noriaki Kano, Nobuhiku Seraku, Fumio Takahashi and Shinichi Tsuji, “Attractive Quality and Must-Be Quality”, Journal of the Japanese Society for Quality Control, 1984.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="value-proposition-canvas.html">Value Proposition Canvas</a></li><li><a href="jobs-to-be-done.html">Jobs-to-be-Done</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Prioritising features and deciding what to lead with in messaging</dd><dt>You need</dt><dd>A list of features and a short survey of customers</dd><dt>You get</dt><dd>Each feature sorted into must-be, performance, attractive or indifferent</dd><dt>Time</dt><dd>Two weeks including the survey</dd><dt>Example company</dt><dd>Lumora Diagnostics, diagnostics</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":6,"diagram":{"type":"chart","viewBox":"0 0 800 450","left":130,"right":630,"yTitleGap":100,"alt":"Kano Model: satisfaction plotted against how fully a need is met, with a straight performance line, a must-be curve that stays below neutral, and an attractive curve that rises above it.","axesStep":1,"x":{"domain":[0,1],"title":"How fully the need is met","low":"Not met","high":"Fully met"},"y":{"domain":[-1,1],"title":"Satisfaction","low":"Dissatisfied","high":"Delighted"},"hlines":[{"v":0,"step":5,"label":"Indifferent","ex":"Indifferent: device colours","below":true,"left":true}],"curves":[{"step":2,"points":[[0,-0.8],[0.025,-0.76],[0.05,-0.72],[0.075,-0.68],[0.1,-0.64],[0.125,-0.6],[0.15,-0.56],[0.175,-0.52],[0.2,-0.48],[0.225,-0.44],[0.25,-0.4],[0.275,-0.36],[0.3,-0.32],[0.325,-0.28],[0.35,-0.24],[0.375,-0.2],[0.4,-0.16],[0.425,-0.12],[0.45,-0.08],[0.475,-0.04],[0.5,0],[0.525,0.04],[0.55,0.08],[0.575,0.12],[0.6,0.16],[0.625,0.2],[0.65,0.24],[0.675,0.28],[0.7,0.32],[0.725,0.36],[0.75,0.4],[0.775,0.44],[0.8,0.48],[0.825,0.52],[0.85,0.56],[0.875,0.6],[0.9,0.64],[0.925,0.68],[0.95,0.72],[0.975,0.76],[1,0.8]],"label":"Performance","ex":"Time to result","labelAt":[1,0.8],"dx":12,"dy":20,"max":18},{"step":3,"points":[[0,-0.92],[0.025,-0.828],[0.05,-0.746],[0.075,-0.671],[0.1,-0.604],[0.125,-0.544],[0.15,-0.49],[0.175,-0.441],[0.2,-0.397],[0.225,-0.358],[0.25,-0.322],[0.275,-0.29],[0.3,-0.261],[0.325,-0.235],[0.35,-0.212],[0.375,-0.19],[0.4,-0.171],[0.425,-0.154],[0.45,-0.139],[0.475,-0.125],[0.5,-0.113],[0.525,-0.101],[0.55,-0.091],[0.575,-0.082],[0.6,-0.074],[0.625,-0.067],[0.65,-0.06],[0.675,-0.054],[0.7,-0.049],[0.725,-0.044],[0.75,-0.039],[0.775,-0.035],[0.8,-0.032],[0.825,-0.029],[0.85,-0.026],[0.875,-0.023],[0.9,-0.021],[0.925,-0.019],[0.95,-0.017],[0.975,-0.015],[1,-0.014]],"label":"Must-be","ex":"Certified accuracy","labelAt":[1,-0.013795930674839488],"dx":12,"dy":5,"max":18},{"step":4,"points":[[0,0],[0.025,0.002],[0.05,0.004],[0.075,0.006],[0.1,0.008],[0.125,0.011],[0.15,0.014],[0.175,0.017],[0.2,0.021],[0.225,0.025],[0.25,0.029],[0.275,0.034],[0.3,0.04],[0.325,0.046],[0.35,0.052],[0.375,0.06],[0.4,0.068],[0.425,0.077],[0.45,0.087],[0.475,0.098],[0.5,0.11],[0.525,0.123],[0.55,0.138],[0.575,0.154],[0.6,0.172],[0.625,0.192],[0.65,0.214],[0.675,0.238],[0.7,0.265],[0.725,0.295],[0.75,0.328],[0.775,0.364],[0.8,0.404],[0.825,0.448],[0.85,0.497],[0.875,0.551],[0.9,0.611],[0.925,0.677],[0.95,0.75],[0.975,0.831],[1,0.92]],"label":"Attractive","ex":"Auto-sync to patient record","labelAt":[1,0.9200000000000002],"dx":12,"dy":-14,"max":18}],"arrows":[{"step":6,"from":[0.86,0.4781522402857364],"to":[0.86,0.045162026538960495],"label":"Over time","ex":"Soon expected"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

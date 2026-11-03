@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content-to-Stage Map — Topoi</title>
+<meta name="description" content="Map every piece of content to the stage where buyers and customers need it, and find the gaps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-sales-enablement"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V4.5h6V7M3 13h18M11 13v2h2v-2"/></svg>Sales enablement</a></p>
+    <h1>Content-to-Stage Map</h1>
+    <p class="lede">Map every piece of content to the stage where buyers and customers need it, and find the gaps.</p>
+    <p class="origin">Common product marketing practice; no single author</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Content-to-Stage Map">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Map the stages</span></button>
+        <p class="gen">Lay out the stages from first interest to growing account.</p><p class="ex">Tessera audits 80 pieces of content.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Awareness</span></button>
+        <p class="gen">Content that helps buyers recognise the problem.</p><p class="ex">A guide to the real cost of unplanned downtime.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Consideration</span></button>
+        <p class="gen">Content that helps buyers compare approaches.</p><p class="ex">A comparison of spreadsheets, ERP modules and dedicated tools.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Decision</span></button>
+        <p class="gen">Content that helps buyers choose and justify the purchase.</p><p class="ex">ROI calculator, case study, IT security pack.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Onboarding</span></button>
+        <p class="gen">Content that gets new customers to first value quickly.</p><p class="ex">Set-up checklist and technician app videos.</p></li>
+      <li><button type="button"><span class="n">6</span><span class="t">Expansion</span></button>
+        <p class="gen">Content that helps customers get more value and buy more.</p><p class="ex">Guides to adding a second plant and the Predict module.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Do we have the right content for every stage, and do sellers know which to use when?</p></section>
+      <section><h2>When to use it</h2><ul><li>Sellers cannot find the right content.</li><li>Planning next quarter’s content.</li><li>Content focuses only on awareness.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>When the stages are unclear; agree them first.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>List every content asset you have.</li><li>Assign each to one main stage and buyer role.</li><li>Find stages with little or outdated content.</li><li>Share the map with sales in the tools they use.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Map the stages</dt><dd>Tessera audits 80 pieces of content.</dd><dt>Awareness</dt><dd>A guide to the real cost of unplanned downtime.</dd><dt>Consideration</dt><dd>A comparison of spreadsheets, ERP modules and dedicated tools.</dd><dt>Decision</dt><dd>ROI calculator, case study, IT security pack.</dd><dt>Onboarding</dt><dd>Set-up checklist and technician app videos.</dd><dt>Expansion</dt><dd>Guides to adding a second plant and the Predict module.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>Plenty of awareness content, little for decision.</li><li>Forgetting customers after the sale.</li><li>A map stored where sellers never look.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>CONTENT MAP — [Product]
+
+Stage           Content             Owner     Updated     Gap
+Awareness
+Consideration
+Decision
+Onboarding
+Expansion</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A common product marketing practice; there is no single original source.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="gartner-buying-jobs.html">B2B Buying Jobs</a></li><li><a href="tofu-mofu-bofu.html">TOFU, MOFU, BOFU</a></li><li><a href="bow-tie.html">Bow-Tie Model</a></li><li><a href="peso-model.html">PESO Model</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Content planning and sales enablement</dd><dt>You need</dt><dd>An inventory of existing content</dd><dt>You get</dt><dd>A map of content by stage, with gaps to fill</dd><dt>Time</dt><dd>A week to audit and map</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":6,"diagram":{"type":"funnel","viewBox":"0 0 800 420","outlineStep":1,"alt":"Content-to-stage map: awareness, consideration, decision, onboarding and expansion, each with its content.","stages":[{"step":2,"title":"Awareness","metric":"Recognise the problem","ex":"Cost of downtime guide"},{"step":3,"title":"Consideration","metric":"Compare approaches","ex":"Spreadsheets vs ERP vs Tessera"},{"step":4,"title":"Decision","metric":"Choose and justify","ex":"ROI calculator, case, security pack"},{"step":5,"title":"Onboarding","metric":"Reach first value","ex":"Set-up checklist, app videos"},{"step":6,"title":"Expansion","metric":"Get more value","ex":"Second plant, Predict module"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ideal Customer Profile — Topoi</title>
+<meta name="description" content="A description of the companies that get the most value from you and are most valuable to you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/engine.js" defer></script>
+</head>
+<body>
+<header class="site"><a class="brand" href="index.html" aria-label="Topoi, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="https://iliaparaskevopoulos.com">by Ilia Paraskevopoulos</a></nav></header>
+
+<main>
+  <div class="intro">
+    <p class="crumb"><a href="index.html#cat-customer-understanding"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>Customer understanding</a></p>
+    <h1>Ideal Customer Profile</h1>
+    <p class="lede">A description of the companies that get the most value from you and are most valuable to you.</p>
+    <p class="origin">Common B2B practice; no single author</p>
+  </div>
+
+  <section class="player" aria-label="Animated diagram of the Ideal Customer Profile">
+    <div class="sheet"><div class="stage"></div></div>
+    <div class="side">
+      <div class="mode" role="group" aria-label="Diagram wording">
+        <button type="button" data-mode="general" aria-pressed="true">General</button>
+        <button type="button" data-mode="example" aria-pressed="false">Example: Tessera</button>
+      </div>
+      <ol class="steps">
+      <li><button type="button"><span class="n">1</span><span class="t">Start wide</span></button>
+        <p class="gen">Begin with every company that could in theory buy.</p><p class="ex">Every manufacturer in Germany, Austria and Switzerland.</p></li>
+      <li><button type="button"><span class="n">2</span><span class="t">Firmographic fit</span></button>
+        <p class="gen">Filter by size, industry, region and structure where your best customers sit.</p><p class="ex">Plants with 50 to 500 staff and at least three production lines.</p></li>
+      <li><button type="button"><span class="n">3</span><span class="t">Technical fit</span></button>
+        <p class="gen">Filter by the tools and set-up that make you easy to adopt.</p><p class="ex">No dedicated maintenance IT team; still on spreadsheets or paper.</p></li>
+      <li><button type="button"><span class="n">4</span><span class="t">Situation and triggers</span></button>
+        <p class="gen">Add the events that make a company ready to buy now.</p><p class="ex">A recent audit finding, a costly breakdown, or a new plant manager.</p></li>
+      <li><button type="button"><span class="n">5</span><span class="t">Ideal customers</span></button>
+        <p class="gen">The companies that pass every filter. Check the result against your best existing customers.</p><p class="ex">1,400 plants, matching 9 of Tessera’s 10 most successful customers.</p></li>
+      </ol>
+      <div class="controls">
+        <button type="button" data-act="restart">Restart</button>
+        <button type="button" data-act="prev">Back</button>
+        <button type="button" data-act="play" aria-pressed="false">Play</button>
+        <button type="button" data-act="next">Next</button>
+        <span class="counter"></span>
+      </div>
+      <p class="live visually-hidden" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="article">
+    <article>
+      <section><h2>The question it answers</h2><p class="question">Which companies should we spend our marketing and sales effort on?</p></section>
+      <section><h2>When to use it</h2><ul><li>Building target account lists for sales or ABM.</li><li>Aligning marketing and sales on which leads count.</li><li>Explaining why some customers churn and others grow.</li></ul></section>
+      <section><h2>When to skip it</h2><ul><li>Before you have enough customers to see patterns. Start with a hypothesis and revisit.</li></ul></section>
+      <section><h2>How to run it</h2><ol><li>List your ten best and ten worst customers by value, retention and effort.</li><li>Find what the best have in common: size, industry, tools, situation.</li><li>Turn that into filters you can apply with data you can get.</li><li>Size the resulting list and test it with sales.</li><li>Review twice a year.</li></ol></section>
+      <section><h2>Worked example: Tessera</h2>
+        <p>Tessera is a fictional SaaS company whose software helps mid-size manufacturers plan and track equipment maintenance.</p>
+        <dl class="example-list"><dt>Start wide</dt><dd>Every manufacturer in Germany, Austria and Switzerland.</dd><dt>Firmographic fit</dt><dd>Plants with 50 to 500 staff and at least three production lines.</dd><dt>Technical fit</dt><dd>No dedicated maintenance IT team; still on spreadsheets or paper.</dd><dt>Situation and triggers</dt><dd>A recent audit finding, a costly breakdown, or a new plant manager.</dd><dt>Ideal customers</dt><dd>1,400 plants, matching 9 of Tessera’s 10 most successful customers.</dd></dl></section>
+      <section><h2>Common mistakes</h2><ul><li>An ICP so wide it excludes nobody.</li><li>Confusing the ICP (companies) with personas (people).</li><li>Filters you cannot check with real data.</li></ul></section>
+      <section class="template"><h2>Template</h2><pre>IDEAL CUSTOMER PROFILE — [Product]
+
+Firmographics (size, industry, region):
+Technical fit (tools, set-up):
+Situation and triggers:
+Disqualifiers:
+
+Matches among our best customers:   of 10
+Size of the target list:</pre><button type="button" data-act="copy">Copy template</button></section>
+      <section class="sources"><h2>Sources</h2><ul><li>A standard B2B marketing and sales practice; there is no single original source.</li></ul></section>
+      <section><h2>Related frameworks</h2><ul class="related"><li><a href="buying-committee-map.html">Buying Committee Map</a></li><li><a href="abm-tiers.html">Account-Based Marketing Tiers</a></li><li><a href="stp.html">Segmentation, Targeting, Positioning</a></li><li><a href="beachhead-market.html">Beachhead Market</a></li></ul></section>
+    </article>
+    <aside class="glance" aria-label="At a glance"><dl><dt>Use it for</dt><dd>Targeting, account lists and lead scoring</dd><dt>You need</dt><dd>Data on your best and worst customers</dd><dt>You get</dt><dd>Clear fit criteria everyone can apply</dd><dt>Time</dt><dd>One to two weeks</dd><dt>Example company</dt><dd>Tessera, b2b saas</dd></dl></aside>
+  </div>
+</main>
+<script type="application/json" id="fw-data">{"stepCount":5,"diagram":{"type":"funnel","viewBox":"0 0 800 420","outlineStep":1,"alt":"Ideal customer profile as a funnel from all possible companies to ideal customers, through firmographic, technical and situation filters.","stages":[{"step":1,"title":"All companies","metric":"Everyone who could buy","ex":"All DACH manufacturers"},{"step":2,"title":"Firmographics","metric":"Size, industry, region","ex":"50–500 staff, 3+ lines"},{"step":3,"title":"Technical fit","metric":"Tools and set-up","ex":"No maintenance IT; spreadsheets"},{"step":4,"title":"Triggers","metric":"Events that create urgency","ex":"Audit finding, breakdown, new manager"},{"step":5,"title":"Ideal","metric":"Pass every filter","ex":"1,400 plants"}]}}</script>
+<footer class="foot">Topoi by <a href="https://iliaparaskevopoulos.com">Ilia Paraskevopoulos</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
+</body>
+</html>
