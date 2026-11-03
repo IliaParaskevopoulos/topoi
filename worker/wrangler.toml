@@ -1,0 +1,21 @@
+name = "topoi-kit"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Sites allowed to call this server. Add your own domain here if you move Topoi.
+ALLOWED_ORIGINS = "https://iliaparaskevopoulos.github.io,https://topoi.iliaparaskevopoulos.com,https://iliaparaskevopoulos.com"
+MODEL = "claude-sonnet-5-5"
+# Kits per visitor per day (only enforced when the KITS namespace below is enabled).
+DAILY_LIMIT = "5"
+
+# Optional rate limiting. Create it with: npx wrangler kv namespace create KITS
+# then paste the id below and remove the leading # characters.
+# [[kv_namespaces]]
+# binding = "KITS"
+# id = "paste-the-id-here"
+
+# Secrets, never stored in this file (set each with: npx wrangler secret put NAME):
+#   ANTHROPIC_API_KEY  your Anthropic API key
+#   RESEND_API_KEY     your Resend API key
+#   NOTIFY_EMAIL       the address that receives download notifications

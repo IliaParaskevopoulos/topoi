@@ -68,6 +68,20 @@ copywriting formulas (AIDA, PAS, Before-After-Bridge). Apply the same rule to ne
   run `./publish.sh`, which pushes `docs/` to `gh-pages`. A custom domain can be added later in
   the repository's Pages settings.
 
+## Sales kit (sales-kit.html)
+- A bright gold "Make a sales kit" button in the header and hero opens `sales-kit.html`: eight
+  questions plus a consent step (`src/kit.js`), then a kit with positioning, why change/now/us,
+  messaging house, a battlecard per competitor, LAER objection handling, SPIN discovery and
+  MEDDIC or BANT qualification, each linked to its Topoi page. Download as an editable Word file
+  (docx library self-hosted in `src/vendor/`).
+- Writing: if `KIT_API` is set at build time (`KIT_API=https://… node build.js`), the page posts the
+  answers to the Cloudflare Worker in `worker/`, which asks Claude (model in `wrangler.toml`) for the
+  kit as JSON. Without it, or if the server fails, the page builds a quick draft from the answers.
+- Notification: on every download the page posts to the worker's `/notify`, which emails Ilia via
+  Resend (secrets: ANTHROPIC_API_KEY, RESEND_API_KEY, NOTIFY_EMAIL). Setup steps: `worker/README.md`.
+- Status: worker written and tested locally with mocked services; not deployed yet, so KIT_API is
+  empty and the live page makes quick drafts and sends no notifications until Ilia deploys it.
+
 ## Design tokens (src/site.css)
 Byzantine purple brand: purple pen for arrows, annotations, links, icons and filled controls;
 mosaic gold as the highlighter for the step being explained; graph-paper "drawing sheet" for
