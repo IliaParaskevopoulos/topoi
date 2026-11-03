@@ -4,6 +4,8 @@ Product marketing frameworks, drawn one step at a time. Each framework has an an
 
 Live site: https://iliaparaskevopoulos.github.io/topoi/
 
+To publish changes: `node build.js`, commit and push `main`, then `./publish.sh`.
+
 By [Ilia Paraskevopoulos](https://iliaparaskevopoulos.com).
 
 ## How it works

@@ -47,10 +47,11 @@ another, using the same engine as the pages. Next: batches of 15 by category.
   originators in `origin` and `sources`. Don't reproduce book text or copy proprietary artwork.
 - **Build**: zero-dependency Node static generator (`node build.js` → `docs/`, which GitHub Pages serves). Could move to
   Astro later if we need MDX, search or a CMS; not needed yet.
-- **Hosting**: GitHub Pages from the `docs/` folder on `main` of github.com/IliaParaskevopoulos/topoi,
-  live at https://iliaparaskevopoulos.github.io/topoi/. To publish a change: edit, run
-  `node build.js`, commit `docs/` with the source, push to main. A custom domain can be added
-  later in the repository's Pages settings.
+- **Hosting**: GitHub Pages, live at https://iliaparaskevopoulos.github.io/topoi/. Source lives on
+  `main` (with the built site in `docs/`); Pages serves the `gh-pages` branch, which holds only
+  the built files. To publish a change: edit, run `node build.js`, commit and push `main`, then
+  run `./publish.sh`, which pushes `docs/` to `gh-pages`. A custom domain can be added later in
+  the repository's Pages settings.
 
 ## Design tokens (src/site.css)
 Byzantine purple brand: purple pen for arrows, annotations, links, icons and filled controls;
