@@ -8,8 +8,6 @@ const ROOT = __dirname;
 const OUT = path.join(ROOT, 'docs'); // served by GitHub Pages
 const BRAND = 'Topoi';
 const HERO = ['five-forces', 'crossing-the-chasm', 'value-proposition-canvas', 'van-westendorp', 'bow-tie', 'strategy-canvas', 'messaging-house', 'perceptual-map'];
-// URL of the sales-kit server (worker/). Empty = the kit page builds a quick draft in the browser.
-const KIT_API = process.env.KIT_API || '';
 const AUTHOR = { name: 'Ilia Paraskevopoulos', url: 'https://iliaparaskevopoulos.com' };
 
 const catalog = require('./content/_catalog.js');
@@ -71,7 +69,7 @@ const shell = (title, desc, body, extraScripts = '') => `<!DOCTYPE html>
 <script src="assets/engine.js" defer></script>${extraScripts}
 </head>
 <body>
-<header class="site"><a class="brand" href="index.html" aria-label="${BRAND}, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="btn-bright btn-small" href="sales-kit.html">Make a sales kit</a><a class="by" href="${AUTHOR.url}">by ${AUTHOR.name}</a></nav></header>
+<header class="site"><a class="brand" href="index.html" aria-label="${BRAND}, home"><img class="brand-mark" src="assets/favicon.svg?v=3" alt="" width="38" height="38"><span class="wm">Topoi</span><span class="brand-greek" lang="el">τόποι</span></a><nav class="site-nav"><a class="by" href="${AUTHOR.url}">by ${AUTHOR.name}</a></nav></header>
 ${body}
 <footer class="foot">${BRAND} by <a href="${AUTHOR.url}">${AUTHOR.name}</a>. Frameworks are credited to their authors; diagrams and explanations are original. Companies in the worked examples are fictional.</footer>
 </body>
@@ -173,7 +171,6 @@ function indexPage() {
     <div>
     <h1>Product marketing frameworks, drawn one step at a time</h1>
     <p>Each framework comes with an animated diagram you can play, pause and step through, a worked B2B example, and a template you can copy.</p>
-    <p class="hero-cta"><a class="btn-bright" href="sales-kit.html">Make a sales kit</a><span>Answer eight questions and get battlecards, objection handling and discovery questions for your product, ready to download.</span></p>
     <p class="name-note"><span lang="el">Τόποι</span>, topoi, means “places”. In Aristotle’s <em>Rhetoric</em> they are the places a speaker goes to find an argument. This library is the same idea for product marketers.</p>
     </div>
     <div>
@@ -197,40 +194,12 @@ function indexPage() {
     'A library of product marketing frameworks, each explained with an animated diagram, a worked B2B example and a template.', body);
 }
 
-function kitPage() {
-  const body = `
-<main>
-  <div class="intro kit-intro">
-    <h1>Make a sales kit</h1>
-    <p class="lede">Answer eight short questions about your product. You get a sales kit built on the frameworks in this library: positioning, a messaging house, battlecards for each competitor, objection handling, discovery questions and qualification.</p>
-    <p class="origin">Download it as an editable Word file. It takes about five minutes.</p>
-  </div>
-  <div class="kit-wrap"><div class="sheet kit-sheet"><div id="kit-app" data-api="${esc(KIT_API)}"></div></div>
-    <aside class="glance kit-aside" aria-label="What is in the kit"><dl>
-      <dt>Positioning</dt><dd><a href="positioning-statement.html">Positioning statement</a> and value proposition</dd>
-      <dt>Messaging</dt><dd><a href="messaging-house.html">Messaging house</a> with proof</dd>
-      <dt>Competition</dt><dd>A <a href="battlecard.html">battlecard</a> for each competitor</dd>
-      <dt>Objections</dt><dd>Responses in <a href="laer.html">LAER</a> steps</dd>
-      <dt>Discovery</dt><dd><a href="spin-selling.html">SPIN</a> questions</dd>
-      <dt>Qualification</dt><dd><a href="meddic.html">MEDDIC</a> or <a href="bant.html">BANT</a></dd>
-    </dl></aside>
-  </div>
-  <noscript><p class="wrap">The sales kit needs JavaScript turned on.</p></noscript>
-</main>`;
-  return shell(`Make a sales kit — ${BRAND}`, 'Answer eight questions and get a sales kit: positioning, messaging, battlecards, objection handling and discovery questions, as a Word file.', body,
-    '\n<script src="assets/vendor/docx.umd.js" defer></script>\n<script src="assets/kit.js" defer></script>');
-}
-
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'src/site.css'), path.join(OUT, 'assets/site.css'));
 fs.copyFileSync(path.join(ROOT, 'src/engine.js'), path.join(OUT, 'assets/engine.js'));
 fs.readdirSync(path.join(ROOT, 'src/brand')).forEach(f => fs.copyFileSync(path.join(ROOT, 'src/brand', f), path.join(OUT, 'assets', f)));
 fs.writeFileSync(path.join(OUT, 'index.html'), indexPage());
-fs.writeFileSync(path.join(OUT, 'sales-kit.html'), kitPage());
-fs.copyFileSync(path.join(ROOT, 'src/kit.js'), path.join(OUT, 'assets/kit.js'));
-fs.mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true });
-fs.readdirSync(path.join(ROOT, 'src/vendor')).forEach(f => fs.copyFileSync(path.join(ROOT, 'src/vendor', f), path.join(OUT, 'assets/vendor', f)));
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 all.forEach(f => fs.writeFileSync(path.join(OUT, f.slug + '.html'), frameworkPage(f)));
 console.log('Built', all.length, 'framework pages; catalogue lists', total, 'frameworks in', catalog.length, 'categories');
